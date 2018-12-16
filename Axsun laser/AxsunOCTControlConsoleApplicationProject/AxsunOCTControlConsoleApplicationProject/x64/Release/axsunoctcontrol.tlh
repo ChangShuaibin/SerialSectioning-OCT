@@ -1,0 +1,1777 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.00.24215.1 (ef7ac048).
+//
+// c:\users\nkemp\documents\visual studio 2015\projects\axsunoctcontrolconsoleapplicationproject\axsunoctcontrolconsoleapplicationproject\x64\release\axsunoctcontrol.tlh
+//
+// C++ source equivalent of Win32 type library AxsunOCTControl.tlb
+// compiler-generated file created 04/13/17 at 11:46:17 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace AxsunOCTControl {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("009fe64a-0961-458c-8665-8bb4dc7be0b1"))
+/* LIBID */ __AxsunOCTControl;
+struct /* coclass */ Win32Usb;
+struct DeviceInterfaceDetailData;
+struct DeviceBroadcastInterface;
+struct __declspec(uuid("d4b716df-7b27-36e0-88b0-c9d0e8afee7b"))
+/* dual interface */ IAxsunOCTControl;
+struct /* coclass */ AxsunOCTControl;
+struct /* coclass */ FPGASettingsClass;
+struct /* coclass */ DAQSettingsClass;
+struct /* coclass */ FloatScanSetting;
+struct /* coclass */ IntScanSetting;
+struct /* coclass */ BoolScanSetting;
+struct /* coclass */ AllScanSettingsClass;
+struct /* coclass */ OCTDeviceConnectOrDisconnectHandler;
+struct /* coclass */ OCTDeviceConnectHandler;
+struct /* coclass */ OCTDeviceDisconnectHandler;
+struct /* coclass */ PacketSentHandler;
+struct /* coclass */ FPGASectionSentHandler;
+struct /* coclass */ PIMEventHandler;
+struct /* coclass */ PIMHeartbeatHandler;
+struct /* coclass */ SocketConnectHandler;
+struct /* coclass */ USBInitCompleteHandler;
+enum ConnectOrDisconnectEnum;
+struct /* coclass */ DACTableClass;
+struct /* coclass */ FPGAConfigTableClass;
+struct /* coclass */ RS232ScannerClass;
+enum DebugLogLocation;
+struct /* coclass */ DebugLog_Class;
+struct /* coclass */ Utilities;
+struct /* coclass */ BlockingQueue;
+struct /* coclass */ Zoom2DControl;
+struct /* coclass */ ZoomControl;
+struct /* coclass */ OCTPIMConstants;
+struct /* coclass */ PIMEventListener;
+struct /* coclass */ PIMHeartbeatClass;
+struct /* coclass */ AxsunOCTDAQDevice;
+struct /* coclass */ GetMacAddressFromIPAddress;
+struct /* coclass */ OCT_DEVICE_GUID;
+struct /* coclass */ AXSUN_USB_ID;
+struct /* coclass */ USB_READ_WRITE_TIMEOUTS;
+struct /* coclass */ AxsunOCTUSBDevice;
+struct /* coclass */ USBDeviceConnectHandler;
+struct /* coclass */ USBDeviceDisconnectHandler;
+struct /* coclass */ USBDeviceStartConnectDisconnectHandler;
+struct /* coclass */ OCTDevice;
+struct /* coclass */ CommandHeaderType;
+struct /* coclass */ PacketHeaderType;
+struct /* coclass */ SyncHeaderType;
+struct /* coclass */ PIMEventType;
+enum SystemStateType;
+enum JoggingStateType;
+enum CatheterHandleStateType;
+enum CatheterEngageStateType;
+enum CatheterSearchType;
+enum PerformanceTriggerType;
+enum TECState;
+struct /* coclass */ SocketConnectStateClass;
+struct /* coclass */ PIMStateClass;
+struct /* coclass */ PIMSettingsClass;
+struct /* coclass */ Host_Error_Codes;
+struct /* coclass */ COMMAND_IDs;
+struct /* coclass */ TEC_STATUS_CODES;
+struct /* coclass */ STATUS_COMMAND_INDEXES;
+struct /* coclass */ STATUS_COMMAND_INDEXES_V1;
+struct /* coclass */ OCT_SYSTEM_TYPES;
+struct /* coclass */ OCT_DATA_SIZES;
+struct /* coclass */ OCT_FPGA_WRITE_TO_FLASH_OPTIONS;
+struct /* coclass */ OCT_FPGA_AQUIRE_MODES;
+struct /* coclass */ OCT_STEPPER_MOTOR_STATES;
+enum CONNECTION_TYPE;
+struct /* coclass */ BoardConfigClass;
+struct /* coclass */ BoardConfigListClass;
+enum LED_STATES;
+enum LED_DEFINES;
+enum LED_LOW_LEVEL_DEFINES;
+struct /* coclass */ HANDPIECE_LEDS;
+struct /* coclass */ PerformanceDataClass;
+struct /* coclass */ TemperatureHistoryClass;
+struct /* coclass */ HANDPIECE_LEDS_LOW_LEVEL;
+struct /* coclass */ DESTINATION_PORTS;
+enum COMMUNICATION_SCHEME_VERSION;
+enum HEARTBEAT_VERSION;
+struct /* coclass */ DAQ_EVENT_TYPES;
+struct /* coclass */ DAQ_CONNECT_CODES;
+struct /* coclass */ OCT_DEVICE_DEFINES;
+enum SpinControlType;
+enum SpinSpeedType;
+enum TECChannelType;
+enum PIDModeType;
+struct /* coclass */ PacketsSentArgs;
+struct /* coclass */ FPGASectionsSentArgs;
+struct /* coclass */ HandpieceIOClass;
+struct /* coclass */ HandpieceStatusClass;
+struct /* coclass */ SpinMotorStatusClass;
+struct /* coclass */ SessionSettingsClass;
+struct /* coclass */ ErrorListClass;
+struct /* coclass */ DAQHeartbeatArgs;
+struct /* coclass */ SocketConnectArgs;
+struct /* coclass */ DAQEventArgs;
+struct /* coclass */ HIDDeviceException;
+struct __declspec(uuid("4f9cda7d-9169-3c91-a2d1-f58bd58281f5"))
+/* dual interface */ _Win32Usb;
+struct __declspec(uuid("c6b74aac-a26a-32c4-b923-20bff249daa8"))
+/* dual interface */ _AxsunOCTControl;
+struct __declspec(uuid("cf276c69-6a44-3677-9e70-08227bf42e65"))
+/* dual interface */ _FPGASettingsClass;
+struct __declspec(uuid("59ef2c8a-135c-369f-806a-64d03301cf64"))
+/* dual interface */ _DAQSettingsClass;
+struct __declspec(uuid("b45009e5-2b04-3683-a855-526270fd54c7"))
+/* dual interface */ _FloatScanSetting;
+struct __declspec(uuid("2b36ee4c-2885-32a0-8f5a-97512068ed46"))
+/* dual interface */ _IntScanSetting;
+struct __declspec(uuid("601ca00a-a2c0-35a5-9144-9098b4cfafe9"))
+/* dual interface */ _BoolScanSetting;
+struct __declspec(uuid("879ab22b-ae44-3de6-a55e-eea011184539"))
+/* dual interface */ _AllScanSettingsClass;
+struct __declspec(uuid("dd037605-278d-35c3-90a4-483477384ca3"))
+/* dual interface */ _OCTDeviceConnectOrDisconnectHandler;
+struct __declspec(uuid("33790830-2183-3c90-b27b-e2fc87f8baa3"))
+/* dual interface */ _OCTDeviceConnectHandler;
+struct __declspec(uuid("33d09a3f-4491-398f-88c7-5ae97a444a29"))
+/* dual interface */ _OCTDeviceDisconnectHandler;
+struct __declspec(uuid("9c6d9aaf-eee6-3e0a-9493-8226a9cef495"))
+/* dual interface */ _PacketSentHandler;
+struct __declspec(uuid("9ae6a0a8-ac4a-3ee7-816f-9be729c981af"))
+/* dual interface */ _FPGASectionSentHandler;
+struct __declspec(uuid("2b4f0044-e0af-3995-9b60-86a413fc8f88"))
+/* dual interface */ _PIMEventHandler;
+struct __declspec(uuid("c93d689e-60c4-332a-8697-db15c0c0589a"))
+/* dual interface */ _PIMHeartbeatHandler;
+struct __declspec(uuid("70eda536-0ae6-39b7-8087-eae235c26870"))
+/* dual interface */ _SocketConnectHandler;
+struct __declspec(uuid("b63813a2-f44c-30a4-a851-c4b9e21d4377"))
+/* dual interface */ _USBInitCompleteHandler;
+struct __declspec(uuid("bdfd5a5a-77b7-344d-a925-59192bd22170"))
+/* dual interface */ _DACTableClass;
+struct __declspec(uuid("fecdf87c-5ce2-3f1b-913e-3e091d9bda83"))
+/* dual interface */ _FPGAConfigTableClass;
+struct __declspec(uuid("75e4f74f-69db-3716-98ba-9e5f35655154"))
+/* dual interface */ _RS232ScannerClass;
+struct __declspec(uuid("09baad57-cf63-3cfb-af1b-15deb6d7d523"))
+/* dual interface */ _DebugLog_Class;
+struct __declspec(uuid("ad819ee9-ded4-3708-88f3-aa4aa0f7556e"))
+/* dual interface */ _Utilities;
+struct __declspec(uuid("2958548a-61b6-3fca-968e-9724160cef17"))
+/* dual interface */ _BlockingQueue;
+struct __declspec(uuid("9298696b-dde0-3f43-8856-7c892c3fb2e4"))
+/* dual interface */ _Zoom2DControl;
+struct __declspec(uuid("52c4346c-3cd3-366a-8cd8-69e11152d9c3"))
+/* dual interface */ _ZoomControl;
+struct __declspec(uuid("e24eb62a-7b24-36b8-836b-3e6317f0995f"))
+/* dual interface */ _OCTPIMConstants;
+struct __declspec(uuid("a2499d08-23ef-3510-9c64-e75286839012"))
+/* dual interface */ _PIMEventListener;
+struct __declspec(uuid("4b90a4a8-d10e-305f-8c7a-6a60e53a1598"))
+/* dual interface */ _PIMHeartbeatClass;
+struct __declspec(uuid("9e3bfbeb-bc64-3e6c-af1d-a24ac5b4549e"))
+/* dual interface */ _AxsunOCTDAQDevice;
+struct __declspec(uuid("b3833a37-9a58-3617-a0e4-6e6e4ff502d2"))
+/* dual interface */ _GetMacAddressFromIPAddress;
+struct __declspec(uuid("f4d7eae4-a192-3681-9868-335b74e0e5c0"))
+/* dual interface */ _OCT_DEVICE_GUID;
+struct __declspec(uuid("1cc35955-bf03-3f19-94ab-476146aed6aa"))
+/* dual interface */ _AXSUN_USB_ID;
+struct __declspec(uuid("04e9e36b-8d57-3028-b384-502a477f5171"))
+/* dual interface */ _USB_READ_WRITE_TIMEOUTS;
+struct __declspec(uuid("2f11537c-69a8-38e6-8f58-97f1dbff4345"))
+/* dual interface */ _AxsunOCTUSBDevice;
+struct __declspec(uuid("dfee746c-e94a-3a45-b3aa-c4e09129f471"))
+/* dual interface */ _USBDeviceConnectHandler;
+struct __declspec(uuid("9a9a7ee1-4b80-3cd6-bc3e-522062c3038f"))
+/* dual interface */ _USBDeviceDisconnectHandler;
+struct __declspec(uuid("4cb504d2-4123-3615-af23-1a7efb328d02"))
+/* dual interface */ _USBDeviceStartConnectDisconnectHandler;
+struct __declspec(uuid("d10197a2-2b17-37f0-9f31-b9469417f6dd"))
+/* dual interface */ _OCTDevice;
+struct __declspec(uuid("1ebe66c3-f379-3403-832d-5787162bdc10"))
+/* dual interface */ _CommandHeaderType;
+struct __declspec(uuid("04633853-7e32-3b91-ace3-2e936e0a79c5"))
+/* dual interface */ _PacketHeaderType;
+struct __declspec(uuid("504a3ef3-6503-36de-8856-8b838e077cd9"))
+/* dual interface */ _SyncHeaderType;
+struct __declspec(uuid("5f4e8f5d-47bd-31d7-a298-a269cff89b2a"))
+/* dual interface */ _PIMEventType;
+struct __declspec(uuid("b8a440f2-669f-396e-859b-025269735e1f"))
+/* dual interface */ _SocketConnectStateClass;
+struct __declspec(uuid("074b408d-2676-318b-b578-7555246b6fa7"))
+/* dual interface */ _PIMStateClass;
+struct __declspec(uuid("74da07f9-896e-3257-8f5a-48b8d1c89438"))
+/* dual interface */ _PIMSettingsClass;
+struct __declspec(uuid("94a47f4f-4efc-3269-9c78-f805c757e02d"))
+/* dual interface */ _Host_Error_Codes;
+struct __declspec(uuid("e7c9af71-b104-3c1a-a864-41f3a3f3a82c"))
+/* dual interface */ _COMMAND_IDs;
+struct __declspec(uuid("c34a62f5-e9f9-3e4b-b15f-d2eb94a7131a"))
+/* dual interface */ _TEC_STATUS_CODES;
+struct __declspec(uuid("de93d418-5fab-38e1-b73a-3b7c35a49530"))
+/* dual interface */ _STATUS_COMMAND_INDEXES;
+struct __declspec(uuid("54cc9da0-798b-3569-be0f-a95fd5bc6203"))
+/* dual interface */ _STATUS_COMMAND_INDEXES_V1;
+struct __declspec(uuid("17ca3f27-2218-3e78-a8ff-e17562e7fccd"))
+/* dual interface */ _OCT_SYSTEM_TYPES;
+struct __declspec(uuid("75373153-5a08-3d13-b0a5-8afa367e87be"))
+/* dual interface */ _OCT_DATA_SIZES;
+struct __declspec(uuid("24bf1d97-7f4f-3f70-9add-b7f23b03cb17"))
+/* dual interface */ _OCT_FPGA_WRITE_TO_FLASH_OPTIONS;
+struct __declspec(uuid("efb14b64-ddb8-3801-a477-4fdccfe00f04"))
+/* dual interface */ _OCT_FPGA_AQUIRE_MODES;
+struct __declspec(uuid("ace7fdf3-4f94-388d-9658-43d768366600"))
+/* dual interface */ _OCT_STEPPER_MOTOR_STATES;
+struct __declspec(uuid("a71f1286-d3b3-3ef8-84d5-43208d369cac"))
+/* dual interface */ _BoardConfigClass;
+struct __declspec(uuid("b6086396-aa68-3d7a-853e-826147c1db7d"))
+/* dual interface */ _BoardConfigListClass;
+struct __declspec(uuid("252e9fb4-b2df-331c-9194-c465d58173c6"))
+/* dual interface */ _HANDPIECE_LEDS;
+struct __declspec(uuid("eded96f7-ae0a-3beb-ae45-ccf4e1fc6a86"))
+/* dual interface */ _PerformanceDataClass;
+struct __declspec(uuid("c57a030d-e07e-3c48-a00c-1977011c07db"))
+/* dual interface */ _TemperatureHistoryClass;
+struct __declspec(uuid("2d490071-47d5-3fec-bc30-f0a39ff31592"))
+/* dual interface */ _HANDPIECE_LEDS_LOW_LEVEL;
+struct __declspec(uuid("faa7a224-cb32-3474-9a6e-fac9daeb6160"))
+/* dual interface */ _DESTINATION_PORTS;
+struct __declspec(uuid("a532bb56-ebd6-3ab2-8ecd-87223247a7d2"))
+/* dual interface */ _DAQ_EVENT_TYPES;
+struct __declspec(uuid("c94ba9f9-c729-337b-8df5-debb2d22de0f"))
+/* dual interface */ _DAQ_CONNECT_CODES;
+struct __declspec(uuid("a0688c1c-cf76-300f-a417-c1578548efce"))
+/* dual interface */ _OCT_DEVICE_DEFINES;
+struct __declspec(uuid("78d84c62-62bd-34d8-9ad8-af11131601c9"))
+/* dual interface */ _PacketsSentArgs;
+struct __declspec(uuid("11f55e24-354b-34aa-bc87-44f77b1d3fdb"))
+/* dual interface */ _FPGASectionsSentArgs;
+struct __declspec(uuid("221eddea-a2ca-33a7-ab85-c64dd012a828"))
+/* dual interface */ _HandpieceIOClass;
+struct __declspec(uuid("137eb080-6159-3f4c-81f0-7ccd0e43b560"))
+/* dual interface */ _HandpieceStatusClass;
+struct __declspec(uuid("e0c99d8c-d126-3eca-95d3-d4157fea8302"))
+/* dual interface */ _SpinMotorStatusClass;
+struct __declspec(uuid("3d071260-496b-32a5-bd08-fb177b0bb746"))
+/* dual interface */ _SessionSettingsClass;
+struct __declspec(uuid("b3aba61d-4c7e-3cf8-af5f-a1370b00aba1"))
+/* dual interface */ _ErrorListClass;
+struct __declspec(uuid("b3c20687-0376-3d7d-ac23-f4d0afea9437"))
+/* dual interface */ _DAQHeartbeatArgs;
+struct __declspec(uuid("d671c6d9-f663-3c65-8c9b-93ee01ddca85"))
+/* dual interface */ _SocketConnectArgs;
+struct __declspec(uuid("533db0f4-1098-327f-bddf-86f1f51f223b"))
+/* dual interface */ _DAQEventArgs;
+struct __declspec(uuid("227a0d5c-d311-379a-9682-6ae72cb42b7e"))
+/* dual interface */ _HIDDeviceException;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IAxsunOCTControl, __uuidof(IAxsunOCTControl));
+_COM_SMARTPTR_TYPEDEF(_Win32Usb, __uuidof(_Win32Usb));
+_COM_SMARTPTR_TYPEDEF(_AxsunOCTControl, __uuidof(_AxsunOCTControl));
+_COM_SMARTPTR_TYPEDEF(_FPGASettingsClass, __uuidof(_FPGASettingsClass));
+_COM_SMARTPTR_TYPEDEF(_DAQSettingsClass, __uuidof(_DAQSettingsClass));
+_COM_SMARTPTR_TYPEDEF(_FloatScanSetting, __uuidof(_FloatScanSetting));
+_COM_SMARTPTR_TYPEDEF(_IntScanSetting, __uuidof(_IntScanSetting));
+_COM_SMARTPTR_TYPEDEF(_BoolScanSetting, __uuidof(_BoolScanSetting));
+_COM_SMARTPTR_TYPEDEF(_AllScanSettingsClass, __uuidof(_AllScanSettingsClass));
+_COM_SMARTPTR_TYPEDEF(_OCTDeviceConnectOrDisconnectHandler, __uuidof(_OCTDeviceConnectOrDisconnectHandler));
+_COM_SMARTPTR_TYPEDEF(_OCTDeviceConnectHandler, __uuidof(_OCTDeviceConnectHandler));
+_COM_SMARTPTR_TYPEDEF(_OCTDeviceDisconnectHandler, __uuidof(_OCTDeviceDisconnectHandler));
+_COM_SMARTPTR_TYPEDEF(_PacketSentHandler, __uuidof(_PacketSentHandler));
+_COM_SMARTPTR_TYPEDEF(_FPGASectionSentHandler, __uuidof(_FPGASectionSentHandler));
+_COM_SMARTPTR_TYPEDEF(_PIMEventHandler, __uuidof(_PIMEventHandler));
+_COM_SMARTPTR_TYPEDEF(_PIMHeartbeatHandler, __uuidof(_PIMHeartbeatHandler));
+_COM_SMARTPTR_TYPEDEF(_SocketConnectHandler, __uuidof(_SocketConnectHandler));
+_COM_SMARTPTR_TYPEDEF(_USBInitCompleteHandler, __uuidof(_USBInitCompleteHandler));
+_COM_SMARTPTR_TYPEDEF(_DACTableClass, __uuidof(_DACTableClass));
+_COM_SMARTPTR_TYPEDEF(_FPGAConfigTableClass, __uuidof(_FPGAConfigTableClass));
+_COM_SMARTPTR_TYPEDEF(_RS232ScannerClass, __uuidof(_RS232ScannerClass));
+_COM_SMARTPTR_TYPEDEF(_DebugLog_Class, __uuidof(_DebugLog_Class));
+_COM_SMARTPTR_TYPEDEF(_Utilities, __uuidof(_Utilities));
+_COM_SMARTPTR_TYPEDEF(_BlockingQueue, __uuidof(_BlockingQueue));
+_COM_SMARTPTR_TYPEDEF(_Zoom2DControl, __uuidof(_Zoom2DControl));
+_COM_SMARTPTR_TYPEDEF(_ZoomControl, __uuidof(_ZoomControl));
+_COM_SMARTPTR_TYPEDEF(_OCTPIMConstants, __uuidof(_OCTPIMConstants));
+_COM_SMARTPTR_TYPEDEF(_PIMEventListener, __uuidof(_PIMEventListener));
+_COM_SMARTPTR_TYPEDEF(_PIMHeartbeatClass, __uuidof(_PIMHeartbeatClass));
+_COM_SMARTPTR_TYPEDEF(_AxsunOCTDAQDevice, __uuidof(_AxsunOCTDAQDevice));
+_COM_SMARTPTR_TYPEDEF(_GetMacAddressFromIPAddress, __uuidof(_GetMacAddressFromIPAddress));
+_COM_SMARTPTR_TYPEDEF(_OCT_DEVICE_GUID, __uuidof(_OCT_DEVICE_GUID));
+_COM_SMARTPTR_TYPEDEF(_AXSUN_USB_ID, __uuidof(_AXSUN_USB_ID));
+_COM_SMARTPTR_TYPEDEF(_USB_READ_WRITE_TIMEOUTS, __uuidof(_USB_READ_WRITE_TIMEOUTS));
+_COM_SMARTPTR_TYPEDEF(_AxsunOCTUSBDevice, __uuidof(_AxsunOCTUSBDevice));
+_COM_SMARTPTR_TYPEDEF(_USBDeviceConnectHandler, __uuidof(_USBDeviceConnectHandler));
+_COM_SMARTPTR_TYPEDEF(_USBDeviceDisconnectHandler, __uuidof(_USBDeviceDisconnectHandler));
+_COM_SMARTPTR_TYPEDEF(_USBDeviceStartConnectDisconnectHandler, __uuidof(_USBDeviceStartConnectDisconnectHandler));
+_COM_SMARTPTR_TYPEDEF(_OCTDevice, __uuidof(_OCTDevice));
+_COM_SMARTPTR_TYPEDEF(_CommandHeaderType, __uuidof(_CommandHeaderType));
+_COM_SMARTPTR_TYPEDEF(_PacketHeaderType, __uuidof(_PacketHeaderType));
+_COM_SMARTPTR_TYPEDEF(_SyncHeaderType, __uuidof(_SyncHeaderType));
+_COM_SMARTPTR_TYPEDEF(_PIMEventType, __uuidof(_PIMEventType));
+_COM_SMARTPTR_TYPEDEF(_SocketConnectStateClass, __uuidof(_SocketConnectStateClass));
+_COM_SMARTPTR_TYPEDEF(_PIMStateClass, __uuidof(_PIMStateClass));
+_COM_SMARTPTR_TYPEDEF(_PIMSettingsClass, __uuidof(_PIMSettingsClass));
+_COM_SMARTPTR_TYPEDEF(_Host_Error_Codes, __uuidof(_Host_Error_Codes));
+_COM_SMARTPTR_TYPEDEF(_COMMAND_IDs, __uuidof(_COMMAND_IDs));
+_COM_SMARTPTR_TYPEDEF(_TEC_STATUS_CODES, __uuidof(_TEC_STATUS_CODES));
+_COM_SMARTPTR_TYPEDEF(_STATUS_COMMAND_INDEXES, __uuidof(_STATUS_COMMAND_INDEXES));
+_COM_SMARTPTR_TYPEDEF(_STATUS_COMMAND_INDEXES_V1, __uuidof(_STATUS_COMMAND_INDEXES_V1));
+_COM_SMARTPTR_TYPEDEF(_OCT_SYSTEM_TYPES, __uuidof(_OCT_SYSTEM_TYPES));
+_COM_SMARTPTR_TYPEDEF(_OCT_DATA_SIZES, __uuidof(_OCT_DATA_SIZES));
+_COM_SMARTPTR_TYPEDEF(_OCT_FPGA_WRITE_TO_FLASH_OPTIONS, __uuidof(_OCT_FPGA_WRITE_TO_FLASH_OPTIONS));
+_COM_SMARTPTR_TYPEDEF(_OCT_FPGA_AQUIRE_MODES, __uuidof(_OCT_FPGA_AQUIRE_MODES));
+_COM_SMARTPTR_TYPEDEF(_OCT_STEPPER_MOTOR_STATES, __uuidof(_OCT_STEPPER_MOTOR_STATES));
+_COM_SMARTPTR_TYPEDEF(_BoardConfigClass, __uuidof(_BoardConfigClass));
+_COM_SMARTPTR_TYPEDEF(_BoardConfigListClass, __uuidof(_BoardConfigListClass));
+_COM_SMARTPTR_TYPEDEF(_HANDPIECE_LEDS, __uuidof(_HANDPIECE_LEDS));
+_COM_SMARTPTR_TYPEDEF(_PerformanceDataClass, __uuidof(_PerformanceDataClass));
+_COM_SMARTPTR_TYPEDEF(_TemperatureHistoryClass, __uuidof(_TemperatureHistoryClass));
+_COM_SMARTPTR_TYPEDEF(_HANDPIECE_LEDS_LOW_LEVEL, __uuidof(_HANDPIECE_LEDS_LOW_LEVEL));
+_COM_SMARTPTR_TYPEDEF(_DESTINATION_PORTS, __uuidof(_DESTINATION_PORTS));
+_COM_SMARTPTR_TYPEDEF(_DAQ_EVENT_TYPES, __uuidof(_DAQ_EVENT_TYPES));
+_COM_SMARTPTR_TYPEDEF(_DAQ_CONNECT_CODES, __uuidof(_DAQ_CONNECT_CODES));
+_COM_SMARTPTR_TYPEDEF(_OCT_DEVICE_DEFINES, __uuidof(_OCT_DEVICE_DEFINES));
+_COM_SMARTPTR_TYPEDEF(_PacketsSentArgs, __uuidof(_PacketsSentArgs));
+_COM_SMARTPTR_TYPEDEF(_FPGASectionsSentArgs, __uuidof(_FPGASectionsSentArgs));
+_COM_SMARTPTR_TYPEDEF(_HandpieceIOClass, __uuidof(_HandpieceIOClass));
+_COM_SMARTPTR_TYPEDEF(_HandpieceStatusClass, __uuidof(_HandpieceStatusClass));
+_COM_SMARTPTR_TYPEDEF(_SpinMotorStatusClass, __uuidof(_SpinMotorStatusClass));
+_COM_SMARTPTR_TYPEDEF(_SessionSettingsClass, __uuidof(_SessionSettingsClass));
+_COM_SMARTPTR_TYPEDEF(_ErrorListClass, __uuidof(_ErrorListClass));
+_COM_SMARTPTR_TYPEDEF(_DAQHeartbeatArgs, __uuidof(_DAQHeartbeatArgs));
+_COM_SMARTPTR_TYPEDEF(_SocketConnectArgs, __uuidof(_SocketConnectArgs));
+_COM_SMARTPTR_TYPEDEF(_DAQEventArgs, __uuidof(_DAQEventArgs));
+_COM_SMARTPTR_TYPEDEF(_HIDDeviceException, __uuidof(_HIDDeviceException));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("bae6f977-05dc-324b-b010-be6ebaaa67e4"))
+Win32Usb;
+    // [ default ] interface _Win32Usb
+    // interface _Object
+
+#pragma pack(push, 1)
+
+struct __declspec(uuid("8baa0156-521c-3014-985b-56763cfaf6f7"))
+DeviceInterfaceDetailData
+{
+    long Size;
+    unsigned char DevicePath[256];
+};
+
+#pragma pack(pop)
+
+#pragma pack(push, 1)
+
+struct __declspec(uuid("480c88d9-dda6-3c2f-88c0-0fe8a0a422d8"))
+DeviceBroadcastInterface
+{
+    long Size;
+    long DeviceType;
+    long Reserved;
+    GUID ClassGuid;
+    unsigned short Name[256];
+};
+
+#pragma pack(pop)
+
+struct __declspec(uuid("d4b716df-7b27-36e0-88b0-c9d0e8afee7b"))
+IAxsunOCTControl : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall StartScan (
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall StopScan (
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall SourceCurrentOn (
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall SourceCurrentOff (
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetNumberOfOCTDevicesPresent (
+        /*[out,retval]*/ long * pRetVal ) = 0;
+      virtual HRESULT __stdcall ConnectToOCTDevice (
+        /*[in]*/ long DeviceNum,
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall ScanForOCTDevices ( ) = 0;
+      virtual HRESULT __stdcall GetFirmwareVersion (
+        /*[in,out]*/ BSTR * FirmwareVersion,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetSerialNum (
+        /*[in,out]*/ BSTR * SerialNum,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetSystemStatus (
+        /*[in,out]*/ SAFEARRAY * * StatusArray,
+        /*[in,out]*/ unsigned long * StatusWordsReturned,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall FPGAADCEnable (
+        /*[in]*/ VARIANT_BOOL Enable,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetSystemType (
+        /*[in,out]*/ unsigned long * SystemType,
+        /*[in,out]*/ BSTR * SystemTypeString,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall SetClockDelay (
+        /*[in]*/ unsigned long Delay,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetClockDelay (
+        /*[in,out]*/ unsigned long * Delay,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetLowSpeedAD (
+        /*[in,out]*/ SAFEARRAY * * RawVals,
+        /*[in,out]*/ SAFEARRAY * * ScaledVals,
+        /*[in,out]*/ SAFEARRAY * * FieldNames,
+        /*[in,out]*/ unsigned long * ChannelsReturned,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall ReadLowSpeedAD (
+        /*[in,out]*/ unsigned long * ChannelsReturned,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetLowSpeedADOneChannel (
+        /*[in]*/ unsigned long Channel,
+        /*[in,out]*/ unsigned long * RawVal,
+        /*[in,out]*/ float * ScaledVal,
+        /*[in,out]*/ BSTR * FieldName ) = 0;
+      virtual HRESULT __stdcall ReadFPGARegisters (
+        /*[in,out]*/ unsigned long * RegisteresReturned,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetOneFPGARegister (
+        /*[in]*/ unsigned long RegNum,
+        /*[in,out]*/ unsigned long * RegVal ) = 0;
+      virtual HRESULT __stdcall GetOneFPGARegisterName (
+        /*[in]*/ unsigned long RegNum,
+        /*[in,out]*/ BSTR * RegName ) = 0;
+      virtual HRESULT __stdcall SetFPGARegister (
+        /*[in]*/ unsigned long RegNum,
+        /*[in]*/ unsigned long RegVal,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetFPGARegister (
+        /*[in]*/ unsigned long RegNum,
+        /*[in,out]*/ unsigned short * RegVal,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall SendFPGAData (
+        /*[in]*/ SAFEARRAY * FPGAData,
+        /*[in]*/ long nWords,
+        /*[in]*/ unsigned long Location,
+        /*[in]*/ unsigned long StartAddr,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall ReadSystemStatus (
+        /*[in,out]*/ unsigned long * StatusWordsReturned,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetOneSystemStatus (
+        /*[in]*/ unsigned long StatusIndex,
+        /*[in,out]*/ unsigned long * StatusValue ) = 0;
+      virtual HRESULT __stdcall GetTECStatus (
+        /*[in,out]*/ unsigned long * LaserTECState,
+        /*[in,out]*/ unsigned long * CountsInRange,
+        /*[in,out]*/ unsigned long * CountsWarmingUp,
+        /*[in,out]*/ unsigned long * CountsOutOfRange,
+        /*[in,out]*/ unsigned long * TECError,
+        /*[in,out]*/ unsigned long * TECTemp,
+        /*[in,out]*/ unsigned long * PointsReturned,
+        /*[in,out]*/ SAFEARRAY * * TECTemps,
+        /*[in,out]*/ SAFEARRAY * * TECTimes,
+        /*[in,out]*/ SAFEARRAY * * TECStates,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall WriteFPGASettingsToLocalFile (
+        /*[in]*/ BSTR filename,
+        /*[in,out]*/ SAFEARRAY * * FPGASettings,
+        /*[in]*/ unsigned long NumFPGASettings,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall ReadFPGASettingsFromLocalFile (
+        /*[in]*/ BSTR filename,
+        /*[in,out]*/ SAFEARRAY * * FPGASettings,
+        /*[in,out]*/ unsigned long * NumFPGASettings,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall SendFPGASettingsToDevice (
+        /*[in,out]*/ SAFEARRAY * * FPGASettings,
+        /*[in]*/ unsigned long NumFPGASettings,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetFPGASettingsFromDevice (
+        /*[in,out]*/ SAFEARRAY * * FPGASettings,
+        /*[in,out]*/ unsigned long * NumFPGASettings,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetFPGASettingNamesFromFile (
+        /*[in]*/ BSTR filename,
+        /*[in,out]*/ SAFEARRAY * * FPGASettingNames,
+        /*[in,out]*/ unsigned long * NumFPGASettings,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetFPGASettingNamesFromDevice (
+        /*[in,out]*/ SAFEARRAY * * FPGASettingNames,
+        /*[in,out]*/ unsigned long * NumFPGASettings,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall GetLaserOnTime (
+        /*[in,out]*/ unsigned long * LaserOnTimeSeconds,
+        /*[out,retval]*/ unsigned long * pRetVal ) = 0;
+      virtual HRESULT __stdcall StartPIMInterface ( ) = 0;
+      virtual HRESULT __stdcall IsOCTDeviceConnected (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall CheckIfOCTDevicePresent (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall CheckIFPIMPresent (
+        /*[out,retval]*/ VARIANT_BOOL * pRetVal ) = 0;
+      virtual HRESULT __stdcall CloseConnections ( ) = 0;
+};
+
+struct __declspec(uuid("0992fad3-ee25-3480-ab93-d36b55677f65"))
+AxsunOCTControl;
+    // [ default ] interface _AxsunOCTControl
+    // interface _Object
+    // interface IComponent
+    // interface IDisposable
+    // interface IWin32Window
+    // interface IAxsunOCTControl
+
+struct __declspec(uuid("76d96d62-2ec7-3a8a-9908-62c8b206a013"))
+FPGASettingsClass;
+    // [ default ] interface _FPGASettingsClass
+    // interface _Object
+
+struct __declspec(uuid("77246b8a-21fe-3860-9c13-dbfcd2f33841"))
+DAQSettingsClass;
+    // [ default ] interface _DAQSettingsClass
+    // interface _Object
+
+struct __declspec(uuid("500d684b-4a15-3939-8942-5cd37198e29b"))
+FloatScanSetting;
+    // [ default ] interface _FloatScanSetting
+    // interface _Object
+
+struct __declspec(uuid("cc6e3f0e-a3a1-344a-a001-f78d5639e754"))
+IntScanSetting;
+    // [ default ] interface _IntScanSetting
+    // interface _Object
+
+struct __declspec(uuid("79b39292-45b8-3711-ab8e-3517bd5540e4"))
+BoolScanSetting;
+    // [ default ] interface _BoolScanSetting
+    // interface _Object
+
+struct __declspec(uuid("09960d6b-f7b5-31c5-8cba-777cec268183"))
+AllScanSettingsClass;
+    // [ default ] interface _AllScanSettingsClass
+    // interface _Object
+
+struct __declspec(uuid("3545f94a-913c-3df0-a355-1c996fef515b"))
+OCTDeviceConnectOrDisconnectHandler;
+    // [ default ] interface _OCTDeviceConnectOrDisconnectHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("b4b7d447-15e3-399d-8c4f-8973a563b141"))
+OCTDeviceConnectHandler;
+    // [ default ] interface _OCTDeviceConnectHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("ac5bfe80-ef67-37c8-8ace-6675d0350a22"))
+OCTDeviceDisconnectHandler;
+    // [ default ] interface _OCTDeviceDisconnectHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("ee1448d0-0ef6-35cf-802a-4f43672b1c87"))
+PacketSentHandler;
+    // [ default ] interface _PacketSentHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("44ef3f0b-2d11-3e8e-bd10-e1b4836be923"))
+FPGASectionSentHandler;
+    // [ default ] interface _FPGASectionSentHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("475e9ae3-2296-3879-9b21-068ceea321d1"))
+PIMEventHandler;
+    // [ default ] interface _PIMEventHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("8eceb09f-4bce-3f06-af83-930a15f6f4aa"))
+PIMHeartbeatHandler;
+    // [ default ] interface _PIMHeartbeatHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("055e83af-5462-37b6-bdca-efb377da6b80"))
+SocketConnectHandler;
+    // [ default ] interface _SocketConnectHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("58669f5a-e374-3c46-a77a-e714b98057fe"))
+USBInitCompleteHandler;
+    // [ default ] interface _USBInitCompleteHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+enum __declspec(uuid("e4bfd779-1767-334c-b558-f67e9d0976b1"))
+ConnectOrDisconnectEnum
+{
+    ConnectOrDisconnectEnum_CONNECTED = 0,
+    ConnectOrDisconnectEnum_DISCONNECTED = 1,
+    ConnectOrDisconnectEnum_UNKNOWN = 2
+};
+
+struct __declspec(uuid("7b647d62-8ff9-3f3e-a9b1-6ac0f0747a1a"))
+DACTableClass;
+    // [ default ] interface _DACTableClass
+    // interface _Object
+
+struct __declspec(uuid("a53bb60d-b120-3f8b-9a2f-2875b13c653a"))
+FPGAConfigTableClass;
+    // [ default ] interface _FPGAConfigTableClass
+    // interface _Object
+
+struct __declspec(uuid("7691b0d9-e9ee-3e23-a1f5-b57ef3ce4aba"))
+RS232ScannerClass;
+    // [ default ] interface _RS232ScannerClass
+    // interface _Object
+
+enum __declspec(uuid("e4e6d9f3-0b88-31dc-b565-e827284467f8"))
+DebugLogLocation
+{
+    DebugLogLocation_P_DRIVE_ERIC = 0,
+    DebugLogLocation_P_DRIVE_NOBLE = 1,
+    DebugLogLocation_LOCAL = 2
+};
+
+struct __declspec(uuid("08f5ecab-acaf-3fb0-b205-fdc3e99b8a6a"))
+DebugLog_Class;
+    // [ default ] interface _DebugLog_Class
+    // interface _Object
+
+struct __declspec(uuid("7f4df56f-d48f-3c99-8605-1f3f9c3ddc89"))
+Utilities;
+    // [ default ] interface _Utilities
+    // interface _Object
+
+struct __declspec(uuid("2a9ab1b8-580c-36ab-be8f-d9ce17536f12"))
+BlockingQueue;
+    // [ default ] interface _BlockingQueue
+    // interface _Object
+    // interface ICollection
+    // interface IEnumerable
+    // interface ICloneable
+
+struct __declspec(uuid("f5af0751-119f-3876-820f-903239525f60"))
+Zoom2DControl;
+    // [ default ] interface _Zoom2DControl
+    // interface _Object
+
+struct __declspec(uuid("964f1c5e-c0e5-3027-9925-7e5c27de4473"))
+ZoomControl;
+    // [ default ] interface _ZoomControl
+    // interface _Object
+
+struct __declspec(uuid("f88f372c-cd92-37d5-9f64-07206da85e42"))
+OCTPIMConstants;
+    // [ default ] interface _OCTPIMConstants
+    // interface _Object
+
+struct __declspec(uuid("9ab1824b-dfc1-30ad-9dee-449e8e98284d"))
+PIMEventListener;
+    // [ default ] interface _PIMEventListener
+    // interface _Object
+
+struct __declspec(uuid("5ef764d9-6f01-3873-8fa5-ec85cd043f9e"))
+PIMHeartbeatClass;
+    // [ default ] interface _PIMHeartbeatClass
+    // interface _Object
+
+struct __declspec(uuid("6f81d93d-8a6a-3678-a017-e86ac841dd92"))
+AxsunOCTDAQDevice;
+    // [ default ] interface _AxsunOCTDAQDevice
+    // interface _Object
+
+struct __declspec(uuid("d397a0b3-97c7-3cd0-a97d-e4e7e8ec5c9e"))
+GetMacAddressFromIPAddress;
+    // [ default ] interface _GetMacAddressFromIPAddress
+    // interface _Object
+
+struct __declspec(uuid("f6e9d220-6b8d-3d09-b7e9-0a29737f83b1"))
+OCT_DEVICE_GUID;
+    // [ default ] interface _OCT_DEVICE_GUID
+    // interface _Object
+
+struct __declspec(uuid("acf52e34-1e93-3702-8921-bb5d672cdc64"))
+AXSUN_USB_ID;
+    // [ default ] interface _AXSUN_USB_ID
+    // interface _Object
+
+struct __declspec(uuid("2b9163a4-2ab0-3ba4-8373-e3dc53769055"))
+USB_READ_WRITE_TIMEOUTS;
+    // [ default ] interface _USB_READ_WRITE_TIMEOUTS
+    // interface _Object
+
+struct __declspec(uuid("e642f123-81f9-34d3-9384-51a4e74f7e64"))
+AxsunOCTUSBDevice;
+    // [ default ] interface _AxsunOCTUSBDevice
+    // interface _Object
+    // interface IDisposable
+
+struct __declspec(uuid("6864a422-d16b-3877-8c2c-01eb23c0e40a"))
+USBDeviceConnectHandler;
+    // [ default ] interface _USBDeviceConnectHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("88e48fe8-76e7-3954-98fc-664ba050b20b"))
+USBDeviceDisconnectHandler;
+    // [ default ] interface _USBDeviceDisconnectHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("3b5cef85-fb7d-36fd-8138-cb6ddf56f38a"))
+USBDeviceStartConnectDisconnectHandler;
+    // [ default ] interface _USBDeviceStartConnectDisconnectHandler
+    // interface _Delegate
+    // interface _Object
+    // interface ICloneable
+    // interface ISerializable
+
+struct __declspec(uuid("9fb0eb6a-88bb-31ca-92aa-40920f52a455"))
+OCTDevice;
+    // [ default ] interface _OCTDevice
+    // interface _Object
+
+struct __declspec(uuid("003c4d60-b8f5-3d34-a8e7-2678463ba0d5"))
+CommandHeaderType;
+    // [ default ] interface _CommandHeaderType
+    // interface _Object
+
+struct __declspec(uuid("159719a0-7b56-3c02-b408-fa88c94b9567"))
+PacketHeaderType;
+    // [ default ] interface _PacketHeaderType
+    // interface _Object
+
+struct __declspec(uuid("15bd3ad0-f78a-3845-8c3b-1c880bcf830f"))
+SyncHeaderType;
+    // [ default ] interface _SyncHeaderType
+    // interface _Object
+
+struct __declspec(uuid("3070ed36-b815-3995-923b-bf5f7ee9dc66"))
+PIMEventType;
+    // [ default ] interface _PIMEventType
+    // interface _Object
+
+enum __declspec(uuid("2d7d1383-abd5-3a2e-bd4d-d45023c97bc7"))
+SystemStateType
+{
+    SystemStateType_NO_SYSTEM_STATE = 0,
+    SystemStateType_NOT_ENGAGED = 1,
+    SystemStateType_ENGAGING = 2,
+    SystemStateType_DISENGAGING = 3,
+    SystemStateType_DARK = 4,
+    SystemStateType_LIVE_READY_TO_RECORD = 5,
+    SystemStateType_LIVE_NOT_READY_TO_RECORD = 6,
+    SystemStateType_RECORD = 7,
+    SystemStateType_CALIBRATING = 8,
+    SystemStateType_POST1 = 9,
+    SystemStateType_POST2 = 10,
+    SystemStateType_CATH_READY_TO_BE_REMOVED = 11,
+    SystemStateType_CATH_NOT_APPROVED = 12,
+    SystemStateType_READY = 13,
+    SystemStateType_ERROR = 14,
+    SystemStateType_TEST = 15
+};
+
+enum __declspec(uuid("96c089f6-59b1-3e75-95f4-e31912941e5e"))
+JoggingStateType
+{
+    JoggingStateType_NOT_JOGGING = 0,
+    JoggingStateType_PROXIMAL_JOGGING = 1,
+    JoggingStateType_DISTAL_JOGGING = 2
+};
+
+enum __declspec(uuid("b904d288-0c27-369f-b658-fd204daca8da"))
+CatheterHandleStateType
+{
+    CatheterHandleStateType_NO_HANDLE = 0,
+    CatheterHandleStateType_HALF_WAY_HANDLE = 1,
+    CatheterHandleStateType_FULL_HANDLE = 2,
+    CatheterHandleStateType_LOCKED = 3
+};
+
+enum __declspec(uuid("fdc8a798-f7d5-38a5-9923-4b8bcbc50596"))
+CatheterEngageStateType
+{
+    CatheterEngageStateType_NOT_ENGAGING = 0,
+    CatheterEngageStateType_ENGAGE_1 = 1,
+    CatheterEngageStateType_ENGAGE_2 = 2,
+    CatheterEngageStateType_ENGAGE_3 = 3,
+    CatheterEngageStateType_ENGAGE_4 = 4,
+    CatheterEngageStateType_ENGAGE_5 = 5,
+    CatheterEngageStateType_ENGAGE_6 = 6,
+    CatheterEngageStateType_ENGAGE_7 = 7,
+    CatheterEngageStateType_ENGAGE_8 = 8,
+    CatheterEngageStateType_DISENGAGE_1 = 9,
+    CatheterEngageStateType_DISENGAGE_2 = 10,
+    CatheterEngageStateType_DISENGAGE_3 = 11,
+    CatheterEngageStateType_DISENGAGE_4 = 12,
+    CatheterEngageStateType_DISENGAGE_5 = 13,
+    CatheterEngageStateType_DISENGAGE_6 = 14
+};
+
+enum __declspec(uuid("87777c01-9687-352f-9111-fd7d4f6367a8"))
+CatheterSearchType
+{
+    CatheterSearchType_SEARCH_DISTAL = 0,
+    CatheterSearchType_SEARCH_PROXIMAL = 1
+};
+
+enum __declspec(uuid("f4ac4781-883e-35a0-80c0-e32fa498aecf"))
+PerformanceTriggerType
+{
+    PerformanceTriggerType_TRIGGER_SPIN_ON = 0,
+    PerformanceTriggerType_TRIGGER_SPIN_OFF = 1,
+    PerformanceTriggerType_TRIGGER_PULLBACK_START = 2,
+    PerformanceTriggerType_TRIGGER_PULLBACK_STOP = 3,
+    PerformanceTriggerType_TRIGGER_IMAGE_ON = 4,
+    PerformanceTriggerType_TRIGGER_IMAGE_OFF = 5,
+    PerformanceTriggerType_TRIGGER_IMAGE_OFF_OR_PULLBACK_STOP = 6,
+    PerformanceTriggerType_TRIGGER_STEPPER_MOVE_START = 7,
+    PerformanceTriggerType_TRIGGER_STEPPER_MOVE_STOP = 8,
+    PerformanceTriggerType_TRIGGER_COUNT_100 = 9,
+    PerformanceTriggerType_TRIGGER_COUNT_500 = 10,
+    PerformanceTriggerType_TRIGGER_COUNT_1000 = 11,
+    PerformanceTriggerType_TRIGGER_COUNT_MAX = 12,
+    PerformanceTriggerType_TRIGGER_JOG_TO_0 = 13
+};
+
+enum __declspec(uuid("34a25f2f-8fa6-36ff-bb66-fe12e8983bba"))
+TECState
+{
+    TECState_TEC_UNINT = 0,
+    TECState_TEC_WARMING_UP = 1,
+    TECState_TEC_WAITING_IN_RANGE = 2,
+    TECState_TEC_READY = 3,
+    TECState_TEC_OFF_ERROR = 4,
+    TECState_TEC_NOT_INSTALLED = 5
+};
+
+struct __declspec(uuid("a3ad989b-ca07-33ba-9e19-5b905caee240"))
+SocketConnectStateClass;
+    // [ default ] interface _SocketConnectStateClass
+    // interface _Object
+
+struct __declspec(uuid("4200da74-5695-362e-9e65-90c1e2c154a8"))
+PIMStateClass;
+    // [ default ] interface _PIMStateClass
+    // interface _Object
+
+struct __declspec(uuid("f42e0011-e60f-3399-92cc-dd70c2ef7a01"))
+PIMSettingsClass;
+    // [ default ] interface _PIMSettingsClass
+    // interface _Object
+
+struct __declspec(uuid("40f48e8a-c02a-31a3-8225-95dddd29db1f"))
+Host_Error_Codes;
+    // [ default ] interface _Host_Error_Codes
+    // interface _Object
+
+struct __declspec(uuid("24966e9c-a9c1-3321-b37c-4b5219a04da5"))
+COMMAND_IDs;
+    // [ default ] interface _COMMAND_IDs
+    // interface _Object
+
+struct __declspec(uuid("35bda8f5-b28f-3d4c-a13f-8d627878bbd1"))
+TEC_STATUS_CODES;
+    // [ default ] interface _TEC_STATUS_CODES
+    // interface _Object
+
+struct __declspec(uuid("7e8bf1b4-c1b5-32d0-be12-c61f23c19c7b"))
+STATUS_COMMAND_INDEXES;
+    // [ default ] interface _STATUS_COMMAND_INDEXES
+    // interface _Object
+
+struct __declspec(uuid("e17ab86a-f145-3e42-881a-9377ba2c9918"))
+STATUS_COMMAND_INDEXES_V1;
+    // [ default ] interface _STATUS_COMMAND_INDEXES_V1
+    // interface _Object
+
+struct __declspec(uuid("474081e5-f760-3c23-8a45-3a91989b3d9d"))
+OCT_SYSTEM_TYPES;
+    // [ default ] interface _OCT_SYSTEM_TYPES
+    // interface _Object
+
+struct __declspec(uuid("a7a2f853-7aa2-31d5-bfaa-b188c303eb98"))
+OCT_DATA_SIZES;
+    // [ default ] interface _OCT_DATA_SIZES
+    // interface _Object
+
+struct __declspec(uuid("ff19f02f-cc04-3bdd-a39c-3a992c9872a9"))
+OCT_FPGA_WRITE_TO_FLASH_OPTIONS;
+    // [ default ] interface _OCT_FPGA_WRITE_TO_FLASH_OPTIONS
+    // interface _Object
+
+struct __declspec(uuid("ce4540d5-fdc7-34e1-856d-1bbabc5deac9"))
+OCT_FPGA_AQUIRE_MODES;
+    // [ default ] interface _OCT_FPGA_AQUIRE_MODES
+    // interface _Object
+
+struct __declspec(uuid("81a6a150-3c09-39be-b7a5-61f257379c33"))
+OCT_STEPPER_MOTOR_STATES;
+    // [ default ] interface _OCT_STEPPER_MOTOR_STATES
+    // interface _Object
+
+enum __declspec(uuid("8dfec892-435d-32eb-ac79-379f1c4b7e52"))
+CONNECTION_TYPE
+{
+    CONNECTION_TYPE_NONE = 0,
+    CONNECTION_TYPE_USB = 1,
+    CONNECTION_TYPE_RS232_PASSTHROUGH = 2,
+    CONNECTION_TYPE_RS232 = 3,
+    CONNECTION_TYPE_NETWORK = 4
+};
+
+struct __declspec(uuid("2eff895e-4f3b-3a73-8689-9f14721d1fbf"))
+BoardConfigClass;
+    // [ default ] interface _BoardConfigClass
+    // interface _Object
+
+struct __declspec(uuid("1d8ef79a-fd68-3a4f-a83d-af0875c2df4a"))
+BoardConfigListClass;
+    // [ default ] interface _BoardConfigListClass
+    // interface _Object
+
+enum __declspec(uuid("dd08f82b-efae-3a66-a57f-b699cb280a4e"))
+LED_STATES
+{
+    LED_STATES_LED_OFF = 0,
+    LED_STATES_LED_ON = 1,
+    LED_STATES_LED_BLINK_SLOW = 2,
+    LED_STATES_LED_BLINK_FAST = 3,
+    LED_STATES_LED_UNCHANGED = 4
+};
+
+enum __declspec(uuid("bec4da89-f3f1-3f57-aa70-09738ccc629c"))
+LED_DEFINES
+{
+    LED_DEFINES_LED_JOG_DISTAL = 0,
+    LED_DEFINES_LED_JOG_PROXIMAL = 1,
+    LED_DEFINES_LED_IMAGE_ON_OFF = 2,
+    LED_DEFINES_LED_RECORD = 3,
+    LED_DEFINES_LED_RELEASE = 4,
+    LED_DEFINES_LED_READY = 5
+};
+
+enum __declspec(uuid("e25c42db-4ed2-361c-b25f-a3da47501dfe"))
+LED_LOW_LEVEL_DEFINES
+{
+    LED_LOW_LEVEL_DEFINES_LED_LL_JOG_DISTAL_1 = 0,
+    LED_LOW_LEVEL_DEFINES_LED_LL_JOG_DISTAL_2 = 1,
+    LED_LOW_LEVEL_DEFINES_LED_LL_JOG_PROXIMAL_1 = 2,
+    LED_LOW_LEVEL_DEFINES_LED_LL_JOG_PROXIMAL_2 = 3,
+    LED_LOW_LEVEL_DEFINES_LED_LL_IMAGE_ON_OFF_1 = 4,
+    LED_LOW_LEVEL_DEFINES_LED_LL_IMAGE_ON_OFF_2 = 5,
+    LED_LOW_LEVEL_DEFINES_LED_LL_RECORD_1 = 6,
+    LED_LOW_LEVEL_DEFINES_LED_LL_RECORD_2 = 7,
+    LED_LOW_LEVEL_DEFINES_LED_LL_RELEASE = 8,
+    LED_LOW_LEVEL_DEFINES_LED_LL_READY = 9,
+    LED_LOW_LEVEL_DEFINES_LED_LL_POSITION_1 = 10,
+    LED_LOW_LEVEL_DEFINES_LED_LL_POSITION_2 = 11,
+    LED_LOW_LEVEL_DEFINES_LED_LL_POSITION_3 = 12,
+    LED_LOW_LEVEL_DEFINES_LED_LL_POSITION_4 = 13,
+    LED_LOW_LEVEL_DEFINES_LED_LL_POSITION_5 = 14,
+    LED_LOW_LEVEL_DEFINES_LED_LL_POSITION_6 = 15
+};
+
+struct __declspec(uuid("17421fee-d196-37bf-9d75-615194f286aa"))
+HANDPIECE_LEDS;
+    // [ default ] interface _HANDPIECE_LEDS
+    // interface _Object
+
+struct __declspec(uuid("3ff18b10-afaa-3e33-a7af-2e47c52619aa"))
+PerformanceDataClass;
+    // [ default ] interface _PerformanceDataClass
+    // interface _Object
+
+struct __declspec(uuid("4b992ddf-6cbf-3cee-91bc-d99d62dd737c"))
+TemperatureHistoryClass;
+    // [ default ] interface _TemperatureHistoryClass
+    // interface _Object
+
+struct __declspec(uuid("caa88589-cbcb-3847-bd8d-6aad5ef7d42d"))
+HANDPIECE_LEDS_LOW_LEVEL;
+    // [ default ] interface _HANDPIECE_LEDS_LOW_LEVEL
+    // interface _Object
+
+struct __declspec(uuid("48ef211a-ecdb-34ef-98b8-2018846e6663"))
+DESTINATION_PORTS;
+    // [ default ] interface _DESTINATION_PORTS
+    // interface _Object
+
+enum __declspec(uuid("c65d94ee-7860-3bf8-ab42-0b916431f924"))
+COMMUNICATION_SCHEME_VERSION
+{
+    COMMUNICATION_SCHEME_VERSION_SCHEME_0 = 0,
+    COMMUNICATION_SCHEME_VERSION_SCHEME_1 = 1
+};
+
+enum __declspec(uuid("41567ea1-c683-3f7b-929c-f4136a801ff8"))
+HEARTBEAT_VERSION
+{
+    HEARTBEAT_VERSION_HEARTBEAT_NONE = 0,
+    HEARTBEAT_VERSION_HEARTBEAT_VERSION_1 = 1,
+    HEARTBEAT_VERSION_HEARTBEAT_VERSION_2 = 2
+};
+
+struct __declspec(uuid("30efb177-ebf9-3159-9d0c-6d92abeae463"))
+DAQ_EVENT_TYPES;
+    // [ default ] interface _DAQ_EVENT_TYPES
+    // interface _Object
+
+struct __declspec(uuid("1f7f4ed3-a7bc-3a0f-b2af-d247c4ea5697"))
+DAQ_CONNECT_CODES;
+    // [ default ] interface _DAQ_CONNECT_CODES
+    // interface _Object
+
+struct __declspec(uuid("eb486a2a-30fd-334a-8d81-c09f7bc2b9ff"))
+OCT_DEVICE_DEFINES;
+    // [ default ] interface _OCT_DEVICE_DEFINES
+    // interface _Object
+
+enum __declspec(uuid("dd28b757-0111-3ee0-9b58-6e3009ed054e"))
+SpinControlType
+{
+    SpinControlType_USE_DEFAULT_SPIN_PID = 20,
+    SpinControlType_USE_SPIN_PID_CONTROL = 21,
+    SpinControlType_USE_SPIN_FIXED = 22
+};
+
+enum __declspec(uuid("6305f1ab-d3a6-3358-bd57-80a4e59158c7"))
+SpinSpeedType
+{
+    SpinSpeedType_USE_SPIN_SPEED_IMAGING = 10,
+    SpinSpeedType_USE_SPIN_SPEED_JOGGING = 11,
+    SpinSpeedType_USE_SPIN_SPEED_OVERRIDE = 12
+};
+
+enum __declspec(uuid("221b311d-faa1-345d-8c78-b9ff8425d6f3"))
+TECChannelType
+{
+    TECChannelType_TEC_CHANNEL_1 = 0,
+    TECChannelType_TEC_CHANNEL_2 = 1
+};
+
+enum __declspec(uuid("133140bd-7079-384b-8a1b-1ae246f40111"))
+PIDModeType
+{
+    PIDModeType_PID_OFF = 30,
+    PIDModeType_PID_MODE_RAMPING = 31,
+    PIDModeType_PID_MODE_STABLE = 32
+};
+
+struct __declspec(uuid("98b1b3a3-14c7-35f8-8aac-a13cd20d83ba"))
+PacketsSentArgs;
+    // [ default ] interface _PacketsSentArgs
+    // interface _Object
+
+struct __declspec(uuid("07beefc1-9877-3744-ab7c-bb29987975c4"))
+FPGASectionsSentArgs;
+    // [ default ] interface _FPGASectionsSentArgs
+    // interface _Object
+
+struct __declspec(uuid("3b639a91-bfad-3940-9577-cc1aa2c1c2b4"))
+HandpieceIOClass;
+    // [ default ] interface _HandpieceIOClass
+    // interface _Object
+
+struct __declspec(uuid("6e9a56bd-8891-3904-b7df-cb970bb1df02"))
+HandpieceStatusClass;
+    // [ default ] interface _HandpieceStatusClass
+    // interface _Object
+
+struct __declspec(uuid("1dc14178-6094-3a9d-89db-6fc32a98ec39"))
+SpinMotorStatusClass;
+    // [ default ] interface _SpinMotorStatusClass
+    // interface _Object
+
+struct __declspec(uuid("85a67516-16da-3df8-9fa7-fe03d66be71e"))
+SessionSettingsClass;
+    // [ default ] interface _SessionSettingsClass
+    // interface _Object
+
+struct __declspec(uuid("071e7005-6ac9-3d68-87a9-84655eb9fa80"))
+ErrorListClass;
+    // [ default ] interface _ErrorListClass
+    // interface _Object
+
+struct __declspec(uuid("dcb1b7c8-278e-3770-9e3e-4d132a7dcc18"))
+DAQHeartbeatArgs;
+    // [ default ] interface _DAQHeartbeatArgs
+    // interface _Object
+
+struct __declspec(uuid("fb40454a-eaa2-35a0-8f62-a761ed6e425b"))
+SocketConnectArgs;
+    // [ default ] interface _SocketConnectArgs
+    // interface _Object
+
+struct __declspec(uuid("0a1e3631-5b43-386a-a96b-81a8b44073ca"))
+DAQEventArgs;
+    // [ default ] interface _DAQEventArgs
+    // interface _Object
+
+struct __declspec(uuid("15c8b390-6105-3bad-b6d9-ea14198f7a3a"))
+HIDDeviceException;
+    // [ default ] interface _HIDDeviceException
+    // interface _Object
+    // interface ISerializable
+    // interface _Exception
+
+struct __declspec(uuid("4f9cda7d-9169-3c91-a2d1-f58bd58281f5"))
+_Win32Usb : IDispatch
+{};
+
+struct __declspec(uuid("c6b74aac-a26a-32c4-b923-20bff249daa8"))
+_AxsunOCTControl : IDispatch
+{};
+
+struct __declspec(uuid("cf276c69-6a44-3677-9e70-08227bf42e65"))
+_FPGASettingsClass : IDispatch
+{};
+
+struct __declspec(uuid("59ef2c8a-135c-369f-806a-64d03301cf64"))
+_DAQSettingsClass : IDispatch
+{};
+
+struct __declspec(uuid("b45009e5-2b04-3683-a855-526270fd54c7"))
+_FloatScanSetting : IDispatch
+{};
+
+struct __declspec(uuid("2b36ee4c-2885-32a0-8f5a-97512068ed46"))
+_IntScanSetting : IDispatch
+{};
+
+struct __declspec(uuid("601ca00a-a2c0-35a5-9144-9098b4cfafe9"))
+_BoolScanSetting : IDispatch
+{};
+
+struct __declspec(uuid("879ab22b-ae44-3de6-a55e-eea011184539"))
+_AllScanSettingsClass : IDispatch
+{};
+
+struct __declspec(uuid("dd037605-278d-35c3-90a4-483477384ca3"))
+_OCTDeviceConnectOrDisconnectHandler : IDispatch
+{};
+
+struct __declspec(uuid("33790830-2183-3c90-b27b-e2fc87f8baa3"))
+_OCTDeviceConnectHandler : IDispatch
+{};
+
+struct __declspec(uuid("33d09a3f-4491-398f-88c7-5ae97a444a29"))
+_OCTDeviceDisconnectHandler : IDispatch
+{};
+
+struct __declspec(uuid("9c6d9aaf-eee6-3e0a-9493-8226a9cef495"))
+_PacketSentHandler : IDispatch
+{};
+
+struct __declspec(uuid("9ae6a0a8-ac4a-3ee7-816f-9be729c981af"))
+_FPGASectionSentHandler : IDispatch
+{};
+
+struct __declspec(uuid("2b4f0044-e0af-3995-9b60-86a413fc8f88"))
+_PIMEventHandler : IDispatch
+{};
+
+struct __declspec(uuid("c93d689e-60c4-332a-8697-db15c0c0589a"))
+_PIMHeartbeatHandler : IDispatch
+{};
+
+struct __declspec(uuid("70eda536-0ae6-39b7-8087-eae235c26870"))
+_SocketConnectHandler : IDispatch
+{};
+
+struct __declspec(uuid("b63813a2-f44c-30a4-a851-c4b9e21d4377"))
+_USBInitCompleteHandler : IDispatch
+{};
+
+struct __declspec(uuid("bdfd5a5a-77b7-344d-a925-59192bd22170"))
+_DACTableClass : IDispatch
+{};
+
+struct __declspec(uuid("fecdf87c-5ce2-3f1b-913e-3e091d9bda83"))
+_FPGAConfigTableClass : IDispatch
+{};
+
+struct __declspec(uuid("75e4f74f-69db-3716-98ba-9e5f35655154"))
+_RS232ScannerClass : IDispatch
+{};
+
+struct __declspec(uuid("09baad57-cf63-3cfb-af1b-15deb6d7d523"))
+_DebugLog_Class : IDispatch
+{};
+
+struct __declspec(uuid("ad819ee9-ded4-3708-88f3-aa4aa0f7556e"))
+_Utilities : IDispatch
+{};
+
+struct __declspec(uuid("2958548a-61b6-3fca-968e-9724160cef17"))
+_BlockingQueue : IDispatch
+{};
+
+struct __declspec(uuid("9298696b-dde0-3f43-8856-7c892c3fb2e4"))
+_Zoom2DControl : IDispatch
+{};
+
+struct __declspec(uuid("52c4346c-3cd3-366a-8cd8-69e11152d9c3"))
+_ZoomControl : IDispatch
+{};
+
+struct __declspec(uuid("e24eb62a-7b24-36b8-836b-3e6317f0995f"))
+_OCTPIMConstants : IDispatch
+{};
+
+struct __declspec(uuid("a2499d08-23ef-3510-9c64-e75286839012"))
+_PIMEventListener : IDispatch
+{};
+
+struct __declspec(uuid("4b90a4a8-d10e-305f-8c7a-6a60e53a1598"))
+_PIMHeartbeatClass : IDispatch
+{};
+
+struct __declspec(uuid("9e3bfbeb-bc64-3e6c-af1d-a24ac5b4549e"))
+_AxsunOCTDAQDevice : IDispatch
+{};
+
+struct __declspec(uuid("b3833a37-9a58-3617-a0e4-6e6e4ff502d2"))
+_GetMacAddressFromIPAddress : IDispatch
+{};
+
+struct __declspec(uuid("f4d7eae4-a192-3681-9868-335b74e0e5c0"))
+_OCT_DEVICE_GUID : IDispatch
+{};
+
+struct __declspec(uuid("1cc35955-bf03-3f19-94ab-476146aed6aa"))
+_AXSUN_USB_ID : IDispatch
+{};
+
+struct __declspec(uuid("04e9e36b-8d57-3028-b384-502a477f5171"))
+_USB_READ_WRITE_TIMEOUTS : IDispatch
+{};
+
+struct __declspec(uuid("2f11537c-69a8-38e6-8f58-97f1dbff4345"))
+_AxsunOCTUSBDevice : IDispatch
+{};
+
+struct __declspec(uuid("dfee746c-e94a-3a45-b3aa-c4e09129f471"))
+_USBDeviceConnectHandler : IDispatch
+{};
+
+struct __declspec(uuid("9a9a7ee1-4b80-3cd6-bc3e-522062c3038f"))
+_USBDeviceDisconnectHandler : IDispatch
+{};
+
+struct __declspec(uuid("4cb504d2-4123-3615-af23-1a7efb328d02"))
+_USBDeviceStartConnectDisconnectHandler : IDispatch
+{};
+
+struct __declspec(uuid("d10197a2-2b17-37f0-9f31-b9469417f6dd"))
+_OCTDevice : IDispatch
+{};
+
+struct __declspec(uuid("1ebe66c3-f379-3403-832d-5787162bdc10"))
+_CommandHeaderType : IDispatch
+{};
+
+struct __declspec(uuid("04633853-7e32-3b91-ace3-2e936e0a79c5"))
+_PacketHeaderType : IDispatch
+{};
+
+struct __declspec(uuid("504a3ef3-6503-36de-8856-8b838e077cd9"))
+_SyncHeaderType : IDispatch
+{};
+
+struct __declspec(uuid("5f4e8f5d-47bd-31d7-a298-a269cff89b2a"))
+_PIMEventType : IDispatch
+{};
+
+struct __declspec(uuid("b8a440f2-669f-396e-859b-025269735e1f"))
+_SocketConnectStateClass : IDispatch
+{};
+
+struct __declspec(uuid("074b408d-2676-318b-b578-7555246b6fa7"))
+_PIMStateClass : IDispatch
+{};
+
+struct __declspec(uuid("74da07f9-896e-3257-8f5a-48b8d1c89438"))
+_PIMSettingsClass : IDispatch
+{};
+
+struct __declspec(uuid("94a47f4f-4efc-3269-9c78-f805c757e02d"))
+_Host_Error_Codes : IDispatch
+{};
+
+struct __declspec(uuid("e7c9af71-b104-3c1a-a864-41f3a3f3a82c"))
+_COMMAND_IDs : IDispatch
+{};
+
+struct __declspec(uuid("c34a62f5-e9f9-3e4b-b15f-d2eb94a7131a"))
+_TEC_STATUS_CODES : IDispatch
+{};
+
+struct __declspec(uuid("de93d418-5fab-38e1-b73a-3b7c35a49530"))
+_STATUS_COMMAND_INDEXES : IDispatch
+{};
+
+struct __declspec(uuid("54cc9da0-798b-3569-be0f-a95fd5bc6203"))
+_STATUS_COMMAND_INDEXES_V1 : IDispatch
+{};
+
+struct __declspec(uuid("17ca3f27-2218-3e78-a8ff-e17562e7fccd"))
+_OCT_SYSTEM_TYPES : IDispatch
+{};
+
+struct __declspec(uuid("75373153-5a08-3d13-b0a5-8afa367e87be"))
+_OCT_DATA_SIZES : IDispatch
+{};
+
+struct __declspec(uuid("24bf1d97-7f4f-3f70-9add-b7f23b03cb17"))
+_OCT_FPGA_WRITE_TO_FLASH_OPTIONS : IDispatch
+{};
+
+struct __declspec(uuid("efb14b64-ddb8-3801-a477-4fdccfe00f04"))
+_OCT_FPGA_AQUIRE_MODES : IDispatch
+{};
+
+struct __declspec(uuid("ace7fdf3-4f94-388d-9658-43d768366600"))
+_OCT_STEPPER_MOTOR_STATES : IDispatch
+{};
+
+struct __declspec(uuid("a71f1286-d3b3-3ef8-84d5-43208d369cac"))
+_BoardConfigClass : IDispatch
+{};
+
+struct __declspec(uuid("b6086396-aa68-3d7a-853e-826147c1db7d"))
+_BoardConfigListClass : IDispatch
+{};
+
+struct __declspec(uuid("252e9fb4-b2df-331c-9194-c465d58173c6"))
+_HANDPIECE_LEDS : IDispatch
+{};
+
+struct __declspec(uuid("eded96f7-ae0a-3beb-ae45-ccf4e1fc6a86"))
+_PerformanceDataClass : IDispatch
+{};
+
+struct __declspec(uuid("c57a030d-e07e-3c48-a00c-1977011c07db"))
+_TemperatureHistoryClass : IDispatch
+{};
+
+struct __declspec(uuid("2d490071-47d5-3fec-bc30-f0a39ff31592"))
+_HANDPIECE_LEDS_LOW_LEVEL : IDispatch
+{};
+
+struct __declspec(uuid("faa7a224-cb32-3474-9a6e-fac9daeb6160"))
+_DESTINATION_PORTS : IDispatch
+{};
+
+struct __declspec(uuid("a532bb56-ebd6-3ab2-8ecd-87223247a7d2"))
+_DAQ_EVENT_TYPES : IDispatch
+{};
+
+struct __declspec(uuid("c94ba9f9-c729-337b-8df5-debb2d22de0f"))
+_DAQ_CONNECT_CODES : IDispatch
+{};
+
+struct __declspec(uuid("a0688c1c-cf76-300f-a417-c1578548efce"))
+_OCT_DEVICE_DEFINES : IDispatch
+{};
+
+struct __declspec(uuid("78d84c62-62bd-34d8-9ad8-af11131601c9"))
+_PacketsSentArgs : IDispatch
+{};
+
+struct __declspec(uuid("11f55e24-354b-34aa-bc87-44f77b1d3fdb"))
+_FPGASectionsSentArgs : IDispatch
+{};
+
+struct __declspec(uuid("221eddea-a2ca-33a7-ab85-c64dd012a828"))
+_HandpieceIOClass : IDispatch
+{};
+
+struct __declspec(uuid("137eb080-6159-3f4c-81f0-7ccd0e43b560"))
+_HandpieceStatusClass : IDispatch
+{};
+
+struct __declspec(uuid("e0c99d8c-d126-3eca-95d3-d4157fea8302"))
+_SpinMotorStatusClass : IDispatch
+{};
+
+struct __declspec(uuid("3d071260-496b-32a5-bd08-fb177b0bb746"))
+_SessionSettingsClass : IDispatch
+{};
+
+struct __declspec(uuid("b3aba61d-4c7e-3cf8-af5f-a1370b00aba1"))
+_ErrorListClass : IDispatch
+{};
+
+struct __declspec(uuid("b3c20687-0376-3d7d-ac23-f4d0afea9437"))
+_DAQHeartbeatArgs : IDispatch
+{};
+
+struct __declspec(uuid("d671c6d9-f663-3c65-8c9b-93ee01ddca85"))
+_SocketConnectArgs : IDispatch
+{};
+
+struct __declspec(uuid("533db0f4-1098-327f-bddf-86f1f51f223b"))
+_DAQEventArgs : IDispatch
+{};
+
+struct __declspec(uuid("227a0d5c-d311-379a-9682-6ae72cb42b7e"))
+_HIDDeviceException : IDispatch
+{};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_AxsunOCTControl =
+    {0x009fe64a,0x0961,0x458c,{0x86,0x65,0x8b,0xb4,0xdc,0x7b,0xe0,0xb1}};
+extern "C" const GUID __declspec(selectany) CLSID_Win32Usb =
+    {0xbae6f977,0x05dc,0x324b,{0xb0,0x10,0xbe,0x6e,0xba,0xaa,0x67,0xe4}};
+extern "C" const GUID __declspec(selectany) IID_IAxsunOCTControl =
+    {0xd4b716df,0x7b27,0x36e0,{0x88,0xb0,0xc9,0xd0,0xe8,0xaf,0xee,0x7b}};
+extern "C" const GUID __declspec(selectany) CLSID_AxsunOCTControl =
+    {0x0992fad3,0xee25,0x3480,{0xab,0x93,0xd3,0x6b,0x55,0x67,0x7f,0x65}};
+extern "C" const GUID __declspec(selectany) CLSID_FPGASettingsClass =
+    {0x76d96d62,0x2ec7,0x3a8a,{0x99,0x08,0x62,0xc8,0xb2,0x06,0xa0,0x13}};
+extern "C" const GUID __declspec(selectany) CLSID_DAQSettingsClass =
+    {0x77246b8a,0x21fe,0x3860,{0x9c,0x13,0xdb,0xfc,0xd2,0xf3,0x38,0x41}};
+extern "C" const GUID __declspec(selectany) CLSID_FloatScanSetting =
+    {0x500d684b,0x4a15,0x3939,{0x89,0x42,0x5c,0xd3,0x71,0x98,0xe2,0x9b}};
+extern "C" const GUID __declspec(selectany) CLSID_IntScanSetting =
+    {0xcc6e3f0e,0xa3a1,0x344a,{0xa0,0x01,0xf7,0x8d,0x56,0x39,0xe7,0x54}};
+extern "C" const GUID __declspec(selectany) CLSID_BoolScanSetting =
+    {0x79b39292,0x45b8,0x3711,{0xab,0x8e,0x35,0x17,0xbd,0x55,0x40,0xe4}};
+extern "C" const GUID __declspec(selectany) CLSID_AllScanSettingsClass =
+    {0x09960d6b,0xf7b5,0x31c5,{0x8c,0xba,0x77,0x7c,0xec,0x26,0x81,0x83}};
+extern "C" const GUID __declspec(selectany) CLSID_OCTDeviceConnectOrDisconnectHandler =
+    {0x3545f94a,0x913c,0x3df0,{0xa3,0x55,0x1c,0x99,0x6f,0xef,0x51,0x5b}};
+extern "C" const GUID __declspec(selectany) CLSID_OCTDeviceConnectHandler =
+    {0xb4b7d447,0x15e3,0x399d,{0x8c,0x4f,0x89,0x73,0xa5,0x63,0xb1,0x41}};
+extern "C" const GUID __declspec(selectany) CLSID_OCTDeviceDisconnectHandler =
+    {0xac5bfe80,0xef67,0x37c8,{0x8a,0xce,0x66,0x75,0xd0,0x35,0x0a,0x22}};
+extern "C" const GUID __declspec(selectany) CLSID_PacketSentHandler =
+    {0xee1448d0,0x0ef6,0x35cf,{0x80,0x2a,0x4f,0x43,0x67,0x2b,0x1c,0x87}};
+extern "C" const GUID __declspec(selectany) CLSID_FPGASectionSentHandler =
+    {0x44ef3f0b,0x2d11,0x3e8e,{0xbd,0x10,0xe1,0xb4,0x83,0x6b,0xe9,0x23}};
+extern "C" const GUID __declspec(selectany) CLSID_PIMEventHandler =
+    {0x475e9ae3,0x2296,0x3879,{0x9b,0x21,0x06,0x8c,0xee,0xa3,0x21,0xd1}};
+extern "C" const GUID __declspec(selectany) CLSID_PIMHeartbeatHandler =
+    {0x8eceb09f,0x4bce,0x3f06,{0xaf,0x83,0x93,0x0a,0x15,0xf6,0xf4,0xaa}};
+extern "C" const GUID __declspec(selectany) CLSID_SocketConnectHandler =
+    {0x055e83af,0x5462,0x37b6,{0xbd,0xca,0xef,0xb3,0x77,0xda,0x6b,0x80}};
+extern "C" const GUID __declspec(selectany) CLSID_USBInitCompleteHandler =
+    {0x58669f5a,0xe374,0x3c46,{0xa7,0x7a,0xe7,0x14,0xb9,0x80,0x57,0xfe}};
+extern "C" const GUID __declspec(selectany) CLSID_DACTableClass =
+    {0x7b647d62,0x8ff9,0x3f3e,{0xa9,0xb1,0x6a,0xc0,0xf0,0x74,0x7a,0x1a}};
+extern "C" const GUID __declspec(selectany) CLSID_FPGAConfigTableClass =
+    {0xa53bb60d,0xb120,0x3f8b,{0x9a,0x2f,0x28,0x75,0xb1,0x3c,0x65,0x3a}};
+extern "C" const GUID __declspec(selectany) CLSID_RS232ScannerClass =
+    {0x7691b0d9,0xe9ee,0x3e23,{0xa1,0xf5,0xb5,0x7e,0xf3,0xce,0x4a,0xba}};
+extern "C" const GUID __declspec(selectany) CLSID_DebugLog_Class =
+    {0x08f5ecab,0xacaf,0x3fb0,{0xb2,0x05,0xfd,0xc3,0xe9,0x9b,0x8a,0x6a}};
+extern "C" const GUID __declspec(selectany) CLSID_Utilities =
+    {0x7f4df56f,0xd48f,0x3c99,{0x86,0x05,0x1f,0x3f,0x9c,0x3d,0xdc,0x89}};
+extern "C" const GUID __declspec(selectany) CLSID_BlockingQueue =
+    {0x2a9ab1b8,0x580c,0x36ab,{0xbe,0x8f,0xd9,0xce,0x17,0x53,0x6f,0x12}};
+extern "C" const GUID __declspec(selectany) CLSID_Zoom2DControl =
+    {0xf5af0751,0x119f,0x3876,{0x82,0x0f,0x90,0x32,0x39,0x52,0x5f,0x60}};
+extern "C" const GUID __declspec(selectany) CLSID_ZoomControl =
+    {0x964f1c5e,0xc0e5,0x3027,{0x99,0x25,0x7e,0x5c,0x27,0xde,0x44,0x73}};
+extern "C" const GUID __declspec(selectany) CLSID_OCTPIMConstants =
+    {0xf88f372c,0xcd92,0x37d5,{0x9f,0x64,0x07,0x20,0x6d,0xa8,0x5e,0x42}};
+extern "C" const GUID __declspec(selectany) CLSID_PIMEventListener =
+    {0x9ab1824b,0xdfc1,0x30ad,{0x9d,0xee,0x44,0x9e,0x8e,0x98,0x28,0x4d}};
+extern "C" const GUID __declspec(selectany) CLSID_PIMHeartbeatClass =
+    {0x5ef764d9,0x6f01,0x3873,{0x8f,0xa5,0xec,0x85,0xcd,0x04,0x3f,0x9e}};
+extern "C" const GUID __declspec(selectany) CLSID_AxsunOCTDAQDevice =
+    {0x6f81d93d,0x8a6a,0x3678,{0xa0,0x17,0xe8,0x6a,0xc8,0x41,0xdd,0x92}};
+extern "C" const GUID __declspec(selectany) CLSID_GetMacAddressFromIPAddress =
+    {0xd397a0b3,0x97c7,0x3cd0,{0xa9,0x7d,0xe4,0xe7,0xe8,0xec,0x5c,0x9e}};
+extern "C" const GUID __declspec(selectany) CLSID_OCT_DEVICE_GUID =
+    {0xf6e9d220,0x6b8d,0x3d09,{0xb7,0xe9,0x0a,0x29,0x73,0x7f,0x83,0xb1}};
+extern "C" const GUID __declspec(selectany) CLSID_AXSUN_USB_ID =
+    {0xacf52e34,0x1e93,0x3702,{0x89,0x21,0xbb,0x5d,0x67,0x2c,0xdc,0x64}};
+extern "C" const GUID __declspec(selectany) CLSID_USB_READ_WRITE_TIMEOUTS =
+    {0x2b9163a4,0x2ab0,0x3ba4,{0x83,0x73,0xe3,0xdc,0x53,0x76,0x90,0x55}};
+extern "C" const GUID __declspec(selectany) CLSID_AxsunOCTUSBDevice =
+    {0xe642f123,0x81f9,0x34d3,{0x93,0x84,0x51,0xa4,0xe7,0x4f,0x7e,0x64}};
+extern "C" const GUID __declspec(selectany) CLSID_USBDeviceConnectHandler =
+    {0x6864a422,0xd16b,0x3877,{0x8c,0x2c,0x01,0xeb,0x23,0xc0,0xe4,0x0a}};
+extern "C" const GUID __declspec(selectany) CLSID_USBDeviceDisconnectHandler =
+    {0x88e48fe8,0x76e7,0x3954,{0x98,0xfc,0x66,0x4b,0xa0,0x50,0xb2,0x0b}};
+extern "C" const GUID __declspec(selectany) CLSID_USBDeviceStartConnectDisconnectHandler =
+    {0x3b5cef85,0xfb7d,0x36fd,{0x81,0x38,0xcb,0x6d,0xdf,0x56,0xf3,0x8a}};
+extern "C" const GUID __declspec(selectany) CLSID_OCTDevice =
+    {0x9fb0eb6a,0x88bb,0x31ca,{0x92,0xaa,0x40,0x92,0x0f,0x52,0xa4,0x55}};
+extern "C" const GUID __declspec(selectany) CLSID_CommandHeaderType =
+    {0x003c4d60,0xb8f5,0x3d34,{0xa8,0xe7,0x26,0x78,0x46,0x3b,0xa0,0xd5}};
+extern "C" const GUID __declspec(selectany) CLSID_PacketHeaderType =
+    {0x159719a0,0x7b56,0x3c02,{0xb4,0x08,0xfa,0x88,0xc9,0x4b,0x95,0x67}};
+extern "C" const GUID __declspec(selectany) CLSID_SyncHeaderType =
+    {0x15bd3ad0,0xf78a,0x3845,{0x8c,0x3b,0x1c,0x88,0x0b,0xcf,0x83,0x0f}};
+extern "C" const GUID __declspec(selectany) CLSID_PIMEventType =
+    {0x3070ed36,0xb815,0x3995,{0x92,0x3b,0xbf,0x5f,0x7e,0xe9,0xdc,0x66}};
+extern "C" const GUID __declspec(selectany) CLSID_SocketConnectStateClass =
+    {0xa3ad989b,0xca07,0x33ba,{0x9e,0x19,0x5b,0x90,0x5c,0xae,0xe2,0x40}};
+extern "C" const GUID __declspec(selectany) CLSID_PIMStateClass =
+    {0x4200da74,0x5695,0x362e,{0x9e,0x65,0x90,0xc1,0xe2,0xc1,0x54,0xa8}};
+extern "C" const GUID __declspec(selectany) CLSID_PIMSettingsClass =
+    {0xf42e0011,0xe60f,0x3399,{0x92,0xcc,0xdd,0x70,0xc2,0xef,0x7a,0x01}};
+extern "C" const GUID __declspec(selectany) CLSID_Host_Error_Codes =
+    {0x40f48e8a,0xc02a,0x31a3,{0x82,0x25,0x95,0xdd,0xdd,0x29,0xdb,0x1f}};
+extern "C" const GUID __declspec(selectany) CLSID_COMMAND_IDs =
+    {0x24966e9c,0xa9c1,0x3321,{0xb3,0x7c,0x4b,0x52,0x19,0xa0,0x4d,0xa5}};
+extern "C" const GUID __declspec(selectany) CLSID_TEC_STATUS_CODES =
+    {0x35bda8f5,0xb28f,0x3d4c,{0xa1,0x3f,0x8d,0x62,0x78,0x78,0xbb,0xd1}};
+extern "C" const GUID __declspec(selectany) CLSID_STATUS_COMMAND_INDEXES =
+    {0x7e8bf1b4,0xc1b5,0x32d0,{0xbe,0x12,0xc6,0x1f,0x23,0xc1,0x9c,0x7b}};
+extern "C" const GUID __declspec(selectany) CLSID_STATUS_COMMAND_INDEXES_V1 =
+    {0xe17ab86a,0xf145,0x3e42,{0x88,0x1a,0x93,0x77,0xba,0x2c,0x99,0x18}};
+extern "C" const GUID __declspec(selectany) CLSID_OCT_SYSTEM_TYPES =
+    {0x474081e5,0xf760,0x3c23,{0x8a,0x45,0x3a,0x91,0x98,0x9b,0x3d,0x9d}};
+extern "C" const GUID __declspec(selectany) CLSID_OCT_DATA_SIZES =
+    {0xa7a2f853,0x7aa2,0x31d5,{0xbf,0xaa,0xb1,0x88,0xc3,0x03,0xeb,0x98}};
+extern "C" const GUID __declspec(selectany) CLSID_OCT_FPGA_WRITE_TO_FLASH_OPTIONS =
+    {0xff19f02f,0xcc04,0x3bdd,{0xa3,0x9c,0x3a,0x99,0x2c,0x98,0x72,0xa9}};
+extern "C" const GUID __declspec(selectany) CLSID_OCT_FPGA_AQUIRE_MODES =
+    {0xce4540d5,0xfdc7,0x34e1,{0x85,0x6d,0x1b,0xba,0xbc,0x5d,0xea,0xc9}};
+extern "C" const GUID __declspec(selectany) CLSID_OCT_STEPPER_MOTOR_STATES =
+    {0x81a6a150,0x3c09,0x39be,{0xb7,0xa5,0x61,0xf2,0x57,0x37,0x9c,0x33}};
+extern "C" const GUID __declspec(selectany) CLSID_BoardConfigClass =
+    {0x2eff895e,0x4f3b,0x3a73,{0x86,0x89,0x9f,0x14,0x72,0x1d,0x1f,0xbf}};
+extern "C" const GUID __declspec(selectany) CLSID_BoardConfigListClass =
+    {0x1d8ef79a,0xfd68,0x3a4f,{0xa8,0x3d,0xaf,0x08,0x75,0xc2,0xdf,0x4a}};
+extern "C" const GUID __declspec(selectany) CLSID_HANDPIECE_LEDS =
+    {0x17421fee,0xd196,0x37bf,{0x9d,0x75,0x61,0x51,0x94,0xf2,0x86,0xaa}};
+extern "C" const GUID __declspec(selectany) CLSID_PerformanceDataClass =
+    {0x3ff18b10,0xafaa,0x3e33,{0xa7,0xaf,0x2e,0x47,0xc5,0x26,0x19,0xaa}};
+extern "C" const GUID __declspec(selectany) CLSID_TemperatureHistoryClass =
+    {0x4b992ddf,0x6cbf,0x3cee,{0x91,0xbc,0xd9,0x9d,0x62,0xdd,0x73,0x7c}};
+extern "C" const GUID __declspec(selectany) CLSID_HANDPIECE_LEDS_LOW_LEVEL =
+    {0xcaa88589,0xcbcb,0x3847,{0xbd,0x8d,0x6a,0xad,0x5e,0xf7,0xd4,0x2d}};
+extern "C" const GUID __declspec(selectany) CLSID_DESTINATION_PORTS =
+    {0x48ef211a,0xecdb,0x34ef,{0x98,0xb8,0x20,0x18,0x84,0x6e,0x66,0x63}};
+extern "C" const GUID __declspec(selectany) CLSID_DAQ_EVENT_TYPES =
+    {0x30efb177,0xebf9,0x3159,{0x9d,0x0c,0x6d,0x92,0xab,0xea,0xe4,0x63}};
+extern "C" const GUID __declspec(selectany) CLSID_DAQ_CONNECT_CODES =
+    {0x1f7f4ed3,0xa7bc,0x3a0f,{0xb2,0xaf,0xd2,0x47,0xc4,0xea,0x56,0x97}};
+extern "C" const GUID __declspec(selectany) CLSID_OCT_DEVICE_DEFINES =
+    {0xeb486a2a,0x30fd,0x334a,{0x8d,0x81,0xc0,0x9f,0x7b,0xc2,0xb9,0xff}};
+extern "C" const GUID __declspec(selectany) CLSID_PacketsSentArgs =
+    {0x98b1b3a3,0x14c7,0x35f8,{0x8a,0xac,0xa1,0x3c,0xd2,0x0d,0x83,0xba}};
+extern "C" const GUID __declspec(selectany) CLSID_FPGASectionsSentArgs =
+    {0x07beefc1,0x9877,0x3744,{0xab,0x7c,0xbb,0x29,0x98,0x79,0x75,0xc4}};
+extern "C" const GUID __declspec(selectany) CLSID_HandpieceIOClass =
+    {0x3b639a91,0xbfad,0x3940,{0x95,0x77,0xcc,0x1a,0xa2,0xc1,0xc2,0xb4}};
+extern "C" const GUID __declspec(selectany) CLSID_HandpieceStatusClass =
+    {0x6e9a56bd,0x8891,0x3904,{0xb7,0xdf,0xcb,0x97,0x0b,0xb1,0xdf,0x02}};
+extern "C" const GUID __declspec(selectany) CLSID_SpinMotorStatusClass =
+    {0x1dc14178,0x6094,0x3a9d,{0x89,0xdb,0x6f,0xc3,0x2a,0x98,0xec,0x39}};
+extern "C" const GUID __declspec(selectany) CLSID_SessionSettingsClass =
+    {0x85a67516,0x16da,0x3df8,{0x9f,0xa7,0xfe,0x03,0xd6,0x6b,0xe7,0x1e}};
+extern "C" const GUID __declspec(selectany) CLSID_ErrorListClass =
+    {0x071e7005,0x6ac9,0x3d68,{0x87,0xa9,0x84,0x65,0x5e,0xb9,0xfa,0x80}};
+extern "C" const GUID __declspec(selectany) CLSID_DAQHeartbeatArgs =
+    {0xdcb1b7c8,0x278e,0x3770,{0x9e,0x3e,0x4d,0x13,0x2a,0x7d,0xcc,0x18}};
+extern "C" const GUID __declspec(selectany) CLSID_SocketConnectArgs =
+    {0xfb40454a,0xeaa2,0x35a0,{0x8f,0x62,0xa7,0x61,0xed,0x6e,0x42,0x5b}};
+extern "C" const GUID __declspec(selectany) CLSID_DAQEventArgs =
+    {0x0a1e3631,0x5b43,0x386a,{0xa9,0x6b,0x81,0xa8,0xb4,0x40,0x73,0xca}};
+extern "C" const GUID __declspec(selectany) CLSID_HIDDeviceException =
+    {0x15c8b390,0x6105,0x3bad,{0xb6,0xd9,0xea,0x14,0x19,0x8f,0x7a,0x3a}};
+extern "C" const GUID __declspec(selectany) IID__Win32Usb =
+    {0x4f9cda7d,0x9169,0x3c91,{0xa2,0xd1,0xf5,0x8b,0xd5,0x82,0x81,0xf5}};
+extern "C" const GUID __declspec(selectany) IID__AxsunOCTControl =
+    {0xc6b74aac,0xa26a,0x32c4,{0xb9,0x23,0x20,0xbf,0xf2,0x49,0xda,0xa8}};
+extern "C" const GUID __declspec(selectany) IID__FPGASettingsClass =
+    {0xcf276c69,0x6a44,0x3677,{0x9e,0x70,0x08,0x22,0x7b,0xf4,0x2e,0x65}};
+extern "C" const GUID __declspec(selectany) IID__DAQSettingsClass =
+    {0x59ef2c8a,0x135c,0x369f,{0x80,0x6a,0x64,0xd0,0x33,0x01,0xcf,0x64}};
+extern "C" const GUID __declspec(selectany) IID__FloatScanSetting =
+    {0xb45009e5,0x2b04,0x3683,{0xa8,0x55,0x52,0x62,0x70,0xfd,0x54,0xc7}};
+extern "C" const GUID __declspec(selectany) IID__IntScanSetting =
+    {0x2b36ee4c,0x2885,0x32a0,{0x8f,0x5a,0x97,0x51,0x20,0x68,0xed,0x46}};
+extern "C" const GUID __declspec(selectany) IID__BoolScanSetting =
+    {0x601ca00a,0xa2c0,0x35a5,{0x91,0x44,0x90,0x98,0xb4,0xcf,0xaf,0xe9}};
+extern "C" const GUID __declspec(selectany) IID__AllScanSettingsClass =
+    {0x879ab22b,0xae44,0x3de6,{0xa5,0x5e,0xee,0xa0,0x11,0x18,0x45,0x39}};
+extern "C" const GUID __declspec(selectany) IID__OCTDeviceConnectOrDisconnectHandler =
+    {0xdd037605,0x278d,0x35c3,{0x90,0xa4,0x48,0x34,0x77,0x38,0x4c,0xa3}};
+extern "C" const GUID __declspec(selectany) IID__OCTDeviceConnectHandler =
+    {0x33790830,0x2183,0x3c90,{0xb2,0x7b,0xe2,0xfc,0x87,0xf8,0xba,0xa3}};
+extern "C" const GUID __declspec(selectany) IID__OCTDeviceDisconnectHandler =
+    {0x33d09a3f,0x4491,0x398f,{0x88,0xc7,0x5a,0xe9,0x7a,0x44,0x4a,0x29}};
+extern "C" const GUID __declspec(selectany) IID__PacketSentHandler =
+    {0x9c6d9aaf,0xeee6,0x3e0a,{0x94,0x93,0x82,0x26,0xa9,0xce,0xf4,0x95}};
+extern "C" const GUID __declspec(selectany) IID__FPGASectionSentHandler =
+    {0x9ae6a0a8,0xac4a,0x3ee7,{0x81,0x6f,0x9b,0xe7,0x29,0xc9,0x81,0xaf}};
+extern "C" const GUID __declspec(selectany) IID__PIMEventHandler =
+    {0x2b4f0044,0xe0af,0x3995,{0x9b,0x60,0x86,0xa4,0x13,0xfc,0x8f,0x88}};
+extern "C" const GUID __declspec(selectany) IID__PIMHeartbeatHandler =
+    {0xc93d689e,0x60c4,0x332a,{0x86,0x97,0xdb,0x15,0xc0,0xc0,0x58,0x9a}};
+extern "C" const GUID __declspec(selectany) IID__SocketConnectHandler =
+    {0x70eda536,0x0ae6,0x39b7,{0x80,0x87,0xea,0xe2,0x35,0xc2,0x68,0x70}};
+extern "C" const GUID __declspec(selectany) IID__USBInitCompleteHandler =
+    {0xb63813a2,0xf44c,0x30a4,{0xa8,0x51,0xc4,0xb9,0xe2,0x1d,0x43,0x77}};
+extern "C" const GUID __declspec(selectany) IID__DACTableClass =
+    {0xbdfd5a5a,0x77b7,0x344d,{0xa9,0x25,0x59,0x19,0x2b,0xd2,0x21,0x70}};
+extern "C" const GUID __declspec(selectany) IID__FPGAConfigTableClass =
+    {0xfecdf87c,0x5ce2,0x3f1b,{0x91,0x3e,0x3e,0x09,0x1d,0x9b,0xda,0x83}};
+extern "C" const GUID __declspec(selectany) IID__RS232ScannerClass =
+    {0x75e4f74f,0x69db,0x3716,{0x98,0xba,0x9e,0x5f,0x35,0x65,0x51,0x54}};
+extern "C" const GUID __declspec(selectany) IID__DebugLog_Class =
+    {0x09baad57,0xcf63,0x3cfb,{0xaf,0x1b,0x15,0xde,0xb6,0xd7,0xd5,0x23}};
+extern "C" const GUID __declspec(selectany) IID__Utilities =
+    {0xad819ee9,0xded4,0x3708,{0x88,0xf3,0xaa,0x4a,0xa0,0xf7,0x55,0x6e}};
+extern "C" const GUID __declspec(selectany) IID__BlockingQueue =
+    {0x2958548a,0x61b6,0x3fca,{0x96,0x8e,0x97,0x24,0x16,0x0c,0xef,0x17}};
+extern "C" const GUID __declspec(selectany) IID__Zoom2DControl =
+    {0x9298696b,0xdde0,0x3f43,{0x88,0x56,0x7c,0x89,0x2c,0x3f,0xb2,0xe4}};
+extern "C" const GUID __declspec(selectany) IID__ZoomControl =
+    {0x52c4346c,0x3cd3,0x366a,{0x8c,0xd8,0x69,0xe1,0x11,0x52,0xd9,0xc3}};
+extern "C" const GUID __declspec(selectany) IID__OCTPIMConstants =
+    {0xe24eb62a,0x7b24,0x36b8,{0x83,0x6b,0x3e,0x63,0x17,0xf0,0x99,0x5f}};
+extern "C" const GUID __declspec(selectany) IID__PIMEventListener =
+    {0xa2499d08,0x23ef,0x3510,{0x9c,0x64,0xe7,0x52,0x86,0x83,0x90,0x12}};
+extern "C" const GUID __declspec(selectany) IID__PIMHeartbeatClass =
+    {0x4b90a4a8,0xd10e,0x305f,{0x8c,0x7a,0x6a,0x60,0xe5,0x3a,0x15,0x98}};
+extern "C" const GUID __declspec(selectany) IID__AxsunOCTDAQDevice =
+    {0x9e3bfbeb,0xbc64,0x3e6c,{0xaf,0x1d,0xa2,0x4a,0xc5,0xb4,0x54,0x9e}};
+extern "C" const GUID __declspec(selectany) IID__GetMacAddressFromIPAddress =
+    {0xb3833a37,0x9a58,0x3617,{0xa0,0xe4,0x6e,0x6e,0x4f,0xf5,0x02,0xd2}};
+extern "C" const GUID __declspec(selectany) IID__OCT_DEVICE_GUID =
+    {0xf4d7eae4,0xa192,0x3681,{0x98,0x68,0x33,0x5b,0x74,0xe0,0xe5,0xc0}};
+extern "C" const GUID __declspec(selectany) IID__AXSUN_USB_ID =
+    {0x1cc35955,0xbf03,0x3f19,{0x94,0xab,0x47,0x61,0x46,0xae,0xd6,0xaa}};
+extern "C" const GUID __declspec(selectany) IID__USB_READ_WRITE_TIMEOUTS =
+    {0x04e9e36b,0x8d57,0x3028,{0xb3,0x84,0x50,0x2a,0x47,0x7f,0x51,0x71}};
+extern "C" const GUID __declspec(selectany) IID__AxsunOCTUSBDevice =
+    {0x2f11537c,0x69a8,0x38e6,{0x8f,0x58,0x97,0xf1,0xdb,0xff,0x43,0x45}};
+extern "C" const GUID __declspec(selectany) IID__USBDeviceConnectHandler =
+    {0xdfee746c,0xe94a,0x3a45,{0xb3,0xaa,0xc4,0xe0,0x91,0x29,0xf4,0x71}};
+extern "C" const GUID __declspec(selectany) IID__USBDeviceDisconnectHandler =
+    {0x9a9a7ee1,0x4b80,0x3cd6,{0xbc,0x3e,0x52,0x20,0x62,0xc3,0x03,0x8f}};
+extern "C" const GUID __declspec(selectany) IID__USBDeviceStartConnectDisconnectHandler =
+    {0x4cb504d2,0x4123,0x3615,{0xaf,0x23,0x1a,0x7e,0xfb,0x32,0x8d,0x02}};
+extern "C" const GUID __declspec(selectany) IID__OCTDevice =
+    {0xd10197a2,0x2b17,0x37f0,{0x9f,0x31,0xb9,0x46,0x94,0x17,0xf6,0xdd}};
+extern "C" const GUID __declspec(selectany) IID__CommandHeaderType =
+    {0x1ebe66c3,0xf379,0x3403,{0x83,0x2d,0x57,0x87,0x16,0x2b,0xdc,0x10}};
+extern "C" const GUID __declspec(selectany) IID__PacketHeaderType =
+    {0x04633853,0x7e32,0x3b91,{0xac,0xe3,0x2e,0x93,0x6e,0x0a,0x79,0xc5}};
+extern "C" const GUID __declspec(selectany) IID__SyncHeaderType =
+    {0x504a3ef3,0x6503,0x36de,{0x88,0x56,0x8b,0x83,0x8e,0x07,0x7c,0xd9}};
+extern "C" const GUID __declspec(selectany) IID__PIMEventType =
+    {0x5f4e8f5d,0x47bd,0x31d7,{0xa2,0x98,0xa2,0x69,0xcf,0xf8,0x9b,0x2a}};
+extern "C" const GUID __declspec(selectany) IID__SocketConnectStateClass =
+    {0xb8a440f2,0x669f,0x396e,{0x85,0x9b,0x02,0x52,0x69,0x73,0x5e,0x1f}};
+extern "C" const GUID __declspec(selectany) IID__PIMStateClass =
+    {0x074b408d,0x2676,0x318b,{0xb5,0x78,0x75,0x55,0x24,0x6b,0x6f,0xa7}};
+extern "C" const GUID __declspec(selectany) IID__PIMSettingsClass =
+    {0x74da07f9,0x896e,0x3257,{0x8f,0x5a,0x48,0xb8,0xd1,0xc8,0x94,0x38}};
+extern "C" const GUID __declspec(selectany) IID__Host_Error_Codes =
+    {0x94a47f4f,0x4efc,0x3269,{0x9c,0x78,0xf8,0x05,0xc7,0x57,0xe0,0x2d}};
+extern "C" const GUID __declspec(selectany) IID__COMMAND_IDs =
+    {0xe7c9af71,0xb104,0x3c1a,{0xa8,0x64,0x41,0xf3,0xa3,0xf3,0xa8,0x2c}};
+extern "C" const GUID __declspec(selectany) IID__TEC_STATUS_CODES =
+    {0xc34a62f5,0xe9f9,0x3e4b,{0xb1,0x5f,0xd2,0xeb,0x94,0xa7,0x13,0x1a}};
+extern "C" const GUID __declspec(selectany) IID__STATUS_COMMAND_INDEXES =
+    {0xde93d418,0x5fab,0x38e1,{0xb7,0x3a,0x3b,0x7c,0x35,0xa4,0x95,0x30}};
+extern "C" const GUID __declspec(selectany) IID__STATUS_COMMAND_INDEXES_V1 =
+    {0x54cc9da0,0x798b,0x3569,{0xbe,0x0f,0xa9,0x5f,0xd5,0xbc,0x62,0x03}};
+extern "C" const GUID __declspec(selectany) IID__OCT_SYSTEM_TYPES =
+    {0x17ca3f27,0x2218,0x3e78,{0xa8,0xff,0xe1,0x75,0x62,0xe7,0xfc,0xcd}};
+extern "C" const GUID __declspec(selectany) IID__OCT_DATA_SIZES =
+    {0x75373153,0x5a08,0x3d13,{0xb0,0xa5,0x8a,0xfa,0x36,0x7e,0x87,0xbe}};
+extern "C" const GUID __declspec(selectany) IID__OCT_FPGA_WRITE_TO_FLASH_OPTIONS =
+    {0x24bf1d97,0x7f4f,0x3f70,{0x9a,0xdd,0xb7,0xf2,0x3b,0x03,0xcb,0x17}};
+extern "C" const GUID __declspec(selectany) IID__OCT_FPGA_AQUIRE_MODES =
+    {0xefb14b64,0xddb8,0x3801,{0xa4,0x77,0x4f,0xdc,0xcf,0xe0,0x0f,0x04}};
+extern "C" const GUID __declspec(selectany) IID__OCT_STEPPER_MOTOR_STATES =
+    {0xace7fdf3,0x4f94,0x388d,{0x96,0x58,0x43,0xd7,0x68,0x36,0x66,0x00}};
+extern "C" const GUID __declspec(selectany) IID__BoardConfigClass =
+    {0xa71f1286,0xd3b3,0x3ef8,{0x84,0xd5,0x43,0x20,0x8d,0x36,0x9c,0xac}};
+extern "C" const GUID __declspec(selectany) IID__BoardConfigListClass =
+    {0xb6086396,0xaa68,0x3d7a,{0x85,0x3e,0x82,0x61,0x47,0xc1,0xdb,0x7d}};
+extern "C" const GUID __declspec(selectany) IID__HANDPIECE_LEDS =
+    {0x252e9fb4,0xb2df,0x331c,{0x91,0x94,0xc4,0x65,0xd5,0x81,0x73,0xc6}};
+extern "C" const GUID __declspec(selectany) IID__PerformanceDataClass =
+    {0xeded96f7,0xae0a,0x3beb,{0xae,0x45,0xcc,0xf4,0xe1,0xfc,0x6a,0x86}};
+extern "C" const GUID __declspec(selectany) IID__TemperatureHistoryClass =
+    {0xc57a030d,0xe07e,0x3c48,{0xa0,0x0c,0x19,0x77,0x01,0x1c,0x07,0xdb}};
+extern "C" const GUID __declspec(selectany) IID__HANDPIECE_LEDS_LOW_LEVEL =
+    {0x2d490071,0x47d5,0x3fec,{0xbc,0x30,0xf0,0xa3,0x9f,0xf3,0x15,0x92}};
+extern "C" const GUID __declspec(selectany) IID__DESTINATION_PORTS =
+    {0xfaa7a224,0xcb32,0x3474,{0x9a,0x6e,0xfa,0xc9,0xda,0xeb,0x61,0x60}};
+extern "C" const GUID __declspec(selectany) IID__DAQ_EVENT_TYPES =
+    {0xa532bb56,0xebd6,0x3ab2,{0x8e,0xcd,0x87,0x22,0x32,0x47,0xa7,0xd2}};
+extern "C" const GUID __declspec(selectany) IID__DAQ_CONNECT_CODES =
+    {0xc94ba9f9,0xc729,0x337b,{0x8d,0xf5,0xde,0xbb,0x2d,0x22,0xde,0x0f}};
+extern "C" const GUID __declspec(selectany) IID__OCT_DEVICE_DEFINES =
+    {0xa0688c1c,0xcf76,0x300f,{0xa4,0x17,0xc1,0x57,0x85,0x48,0xef,0xce}};
+extern "C" const GUID __declspec(selectany) IID__PacketsSentArgs =
+    {0x78d84c62,0x62bd,0x34d8,{0x9a,0xd8,0xaf,0x11,0x13,0x16,0x01,0xc9}};
+extern "C" const GUID __declspec(selectany) IID__FPGASectionsSentArgs =
+    {0x11f55e24,0x354b,0x34aa,{0xbc,0x87,0x44,0xf7,0x7b,0x1d,0x3f,0xdb}};
+extern "C" const GUID __declspec(selectany) IID__HandpieceIOClass =
+    {0x221eddea,0xa2ca,0x33a7,{0xab,0x85,0xc6,0x4d,0xd0,0x12,0xa8,0x28}};
+extern "C" const GUID __declspec(selectany) IID__HandpieceStatusClass =
+    {0x137eb080,0x6159,0x3f4c,{0x81,0xf0,0x7c,0xcd,0x0e,0x43,0xb5,0x60}};
+extern "C" const GUID __declspec(selectany) IID__SpinMotorStatusClass =
+    {0xe0c99d8c,0xd126,0x3eca,{0x95,0xd3,0xd4,0x15,0x7f,0xea,0x83,0x02}};
+extern "C" const GUID __declspec(selectany) IID__SessionSettingsClass =
+    {0x3d071260,0x496b,0x32a5,{0xbd,0x08,0xfb,0x17,0x7b,0x0b,0xb7,0x46}};
+extern "C" const GUID __declspec(selectany) IID__ErrorListClass =
+    {0xb3aba61d,0x4c7e,0x3cf8,{0xaf,0x5f,0xa1,0x37,0x0b,0x00,0xab,0xa1}};
+extern "C" const GUID __declspec(selectany) IID__DAQHeartbeatArgs =
+    {0xb3c20687,0x0376,0x3d7d,{0xac,0x23,0xf4,0xd0,0xaf,0xea,0x94,0x37}};
+extern "C" const GUID __declspec(selectany) IID__SocketConnectArgs =
+    {0xd671c6d9,0xf663,0x3c65,{0x8c,0x9b,0x93,0xee,0x01,0xdd,0xca,0x85}};
+extern "C" const GUID __declspec(selectany) IID__DAQEventArgs =
+    {0x533db0f4,0x1098,0x327f,{0xbd,0xdf,0x86,0xf1,0xf5,0x1f,0x22,0x3b}};
+extern "C" const GUID __declspec(selectany) IID__HIDDeviceException =
+    {0x227a0d5c,0xd311,0x379a,{0x96,0x82,0x6a,0xe7,0x2c,0xb4,0x2b,0x7e}};
+
+} // namespace AxsunOCTControl
+
+#pragma pack(pop)
